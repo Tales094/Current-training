@@ -1,30 +1,18 @@
+.red{
+    color: red;
+}
 p {
-    color:red;
-    
-}
-h1 {
-    color:blue;
-}
-
-a {
-    color: green;
-}
-
-#para1 {
-    color:yellow;
-}
-.blue {
     color: blue;
 }
-
-#para2 {
-    color: orange;
+#special {
+    color: green;
+    text-decoration: underline;
 }
-
-.bold {
-    font-weight: bold;
+.conteneur{
+    background-color: rgb(218, 214, 214);
+    padding: 15px;
+    margin-top: 20px;
 }
-
-.color-blue {
-    color: rgb(52, 52, 202);
+.conteneur p {
+    font-style: italic;
 }
