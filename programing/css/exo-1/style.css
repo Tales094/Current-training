@@ -1,0 +1,30 @@
+p {
+    color:red;
+    
+}
+h1 {
+    color:blue;
+}
+
+a {
+    color: green;
+}
+
+#para1 {
+    color:yellow;
+}
+.blue {
+    color: blue;
+}
+
+#para2 {
+    color: orange;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.color-blue {
+    color: rgb(52, 52, 202);
+}
