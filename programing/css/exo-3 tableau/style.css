@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    width: 100%;  
+}
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: rgb(6, 136, 211);
+    font-weight: bolder;
+}
+caption {
+    font-size:x-large;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.pro{
+    color: white;
+}
+.sup{
+    background-color: rgb(167, 55, 55);
+    color: black;
+    font-weight: bold;
+}
+tr:hover{
+    background-color: green;
+}
+
+
