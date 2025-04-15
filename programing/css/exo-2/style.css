@@ -1,6 +1,9 @@
-
-
-
+@font-face {
+    font-family: 'chonky_bunny.ttf';
+    src:        url('fonts/chonky_bunny.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 15px;
@@ -26,6 +29,7 @@ h3{
 }
 h4{
     color: rgb(0, 0, 100);
+    font-family: "chonky_buuny.ttf", sans-serif;
 }
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
