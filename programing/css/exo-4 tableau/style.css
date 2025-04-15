@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 2px solid rgb(211, 204, 204);
+    padding: 12px;
+}
+.m{
+    text-align: right;
+    font-weight: bolder;
+}
+.n{
+    font-weight: bolder;
+}
+thead{
+    background-color: rgb(31, 31, 56);
+    color: white;
+}
+.rap{
+    margin-top: 30px;
+    font-size: x-large;
+    background-color: lch(69.65% 41.67 181.62);
+    color: white;
+}
+tr:nth-child{
+    background-color: rgb(221, 218, 218);
+}
