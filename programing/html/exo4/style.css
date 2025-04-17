@@ -1,6 +1,6 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 100px;
+
 }
 
 h1{
@@ -10,9 +10,7 @@ h1{
     margin-bottom: 10px;
     margin-top: 40px;
 }
-#full-name, #email, #sujet, #message{
-    margin-top: 15px;
-}
+
 /* #full-name{
     margin-top: 15px;
 }
@@ -25,7 +23,7 @@ h1{
 #message{
     margin-top: 15px;
 } */
-button{
+.col{
     color: white;
     background-color: green;
     padding: 10px;
@@ -35,11 +33,40 @@ button{
     border-radius: 5px;
     border: 2px;
 }
-input[type="text"], input[for="email"], input[for=sujet]
-textarea {
+
+/* input[type="text"], input[type="email"], select[name=sujet], input[type="number"]
+ {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+} */
+
+.element-space {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+
+}
+.border-management {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.resizeTextarea {
+    resize: none;
+}
+
+label {
+    display: block;
+}
+
+.form-width {
+    width:50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
 }
