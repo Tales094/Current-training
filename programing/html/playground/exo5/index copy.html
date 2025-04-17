@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CREER UN COMPTE</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="post">
+      <div class="form">
+        <label for="full-name">Prénom</label>
+        <input
+          class="endessousdutitre"
+          type="text"
+          id="full-name"
+          name="full-name"
+          required
+        />
+      </div>
+      <div class="form">
+        <label for="username">Nom</label>
+        <input
+          class="endessousdutitre"
+          type="text"
+          id="username"
+          name="username"
+          required
+        />
+      </div>
+      <div class="form">
+        <label for="email">Email</label>
+        <input
+          class="endessousdutitre"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+      <div class="form">
+        <label for="Motdepasse">Mot de passe</label>
+        <input
+          class="endessousdutitre"
+          type="password"
+          id="Motdepasse"
+          name="Motdepasse"
+          required
+        />
+        <p>
+          Le mot de passe doit contenir au moins 8 caractéres, une majuscule,
+          une minuscule et un chiffre
+        </p>
+      </div>
+      <div class="form">
+        <label for="ConfirmMDP">Confirme le mot de passe</label>
+        <input
+          class="endessousdutitre"
+          type="text"
+          id="ConfirmMDP"
+          name="ConfirmMDP"
+          required
+        />
+      </div>
+      <div class="form">
+        <label for="datedenaissance">Date de naissance</label>
+        <input
+          class="endessousdutitre"
+          type="date"
+          id="datedenaissance"
+          name="datedenaissance"
+          required
+        />
+      </div>
+
+      <fieldset>
+        <legend>genre</legend>
+        <input type="radio" id="homme" name="Homme" value="Homme" />
+        <label class="radio-label" for="homme">homme</label>
+        <input type="radio" id="femme" name="femme" value="femme" />
+        <label class="radio-label" for="femme">Femme</label>
+        <input type="radio" id="autre" name="autre" value="autre" />
+        <label class="radio-label" for="autre">Autre</label>
+      </fieldset>
+
+      <div class="form">
+        <label for="pays">Pays</label>
+        <select class="endessousdutitre" id="pays" name="pays">
+          <option value="">Selectionnez votre pays</option>
+          <option value="">Angleterre</option>
+          <option value="">Allemagne</option>
+          <option value="">Espagne</option>
+          <option value="">france</option>
+          <option value="">Autre</option>
+        </select>
+      </div>
+
+      <div class="form">
+        <label for="conditions"></label>
+        <input id="conditions" type="checkbox" name="terms" required />
+        J'accepte les <span class="con">conditions d'utilisation</span> et la
+        <span class="con">politique de confidentialité</span>
+      </div>
+
+      <div class="form">
+        <label for="newsletter"></label>
+        <input id="news" type="checkbox" name="news" checked />
+        Je souhaite recevoir la newsletter
+      </div>
+
+      <div class="form">
+        <input class="rese" type="reset" value="Réinitialiser" />
+        <input class="bl" type="button" value="S'inscrire" />
+        <input class="bl" type="button" value="S'inscrire ici" />
+      </div>
+    </form>
+  </body>
+</html>
