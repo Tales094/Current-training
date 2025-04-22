@@ -1,8 +1,13 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    /* color: white;
-    background-color: black; */
+    color: white;
+    background-color: black;
+    background-image: url(images/espacephoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+   
 }
 /* .background{
     background-image: url(images/background.jpg);
@@ -10,27 +15,44 @@ body{
 } */
 h1{
     text-align: center;
-    color: black;
+    /* color: black; */
     margin-top: 100px;
     margin-bottom: 100px;
+    font-size: xxx-large;
 }
-h2{
-    margin-left: 10px;
+h2, h3{
+    margin-left: 20px;
+    font-size: 30px;
 }
-h3{
-    margin-left: 10px;
-}
+
 .back{
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
+    border: none;
     margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .back1{
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
+    border: none;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
 }   
 p{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .pied{
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    margin-top: 15%;
+    padding: 30px;
+    margin-left: -7px;
+    margin-right: -7px;
+    font-size: 18px;
+
 }
     
