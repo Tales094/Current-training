@@ -1,0 +1,66 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+   
+}
+
+.video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.header-container{
+    position: relative;
+} 
+.savoir{
+    background-color: rgba(0, 132, 255, 0.904);
+    color: white;
+    border: 1px solid black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    width: 150px;
+    
+}
+h1{
+    /* margin-top: 35vh; */
+    margin-bottom: 15px;
+}
+p{
+    margin-bottom: 20px;
+}
+
+.title-container{
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.desc-container{
+    position: absolute;
+    top: 82vh;
+    left: 0;
+    right: 0;
+    margin-left: 13px;
+
+}
+p{
+    color: white;
+}
+.image-container{
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 120px;
+    height: 180px;
+    transform: skew(10deg, -22deg)
+}
