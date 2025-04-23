@@ -1,0 +1,43 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.viideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+.header-container{
+    position: relative;
+}
+
+.title-container{
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+p{
+    color: rgba(255, 255, 255, 0.342);
+    
+}
+.entete{
+    border: 2px solid black;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lien{
+    color: white;
+}
+
+    
