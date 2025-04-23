@@ -1,0 +1,88 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+   
+}
+
+.video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.header-container{
+    position: relative;
+} 
+.savoir{
+    background-color: rgba(0, 132, 255, 0.904);
+    color: white;
+    border: 1px solid black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    width: 150px;
+    
+}
+h1{
+    /* margin-top: 35vh; */
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+p{
+    margin-bottom: 20px;
+}
+
+.title-container{
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.desc-container{
+    /* position: absolute;
+    top: 82vh;
+    left: 0;
+    right: 0; */
+    margin-left: 160px;
+    flex: 1;
+
+}
+p{
+    color: white;
+}
+.image-container{
+    /* position: absolute;
+    bottom: 0;
+    right: 40px; */
+    width: 120px;
+    height:176px;
+    margin-right: 47px;
+}
+
+.img-eclair {
+    /* transform: skew(10deg, -22deg) */
+    transform: skew(14deg, -20deg);
+}
+
+.img-eclair:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 238, 0, 0.486)) drop-shadow(0 0 20px rgba(255, 251, 0, 0.411));
+
+}
+
+.footer-container {
+    position:absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
