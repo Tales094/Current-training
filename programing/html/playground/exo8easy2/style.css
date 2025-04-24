@@ -8,9 +8,6 @@ body{
     object-fit: cover;
     object-position: center;
 }
-.header-container{
-    position: relative;
-}
 
 .title-container{
     position: absolute;
@@ -21,23 +18,109 @@ body{
     font-size: 20px;
     text-align: center;
 }
+
 p{
     color: rgba(255, 255, 255, 0.342);
     
 }
 .entete{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
     border: 2px solid black;
     border: none;
     background-color: rgb(0, 0, 0);
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-}
+    flex-wrap: wrap;
+    }
+
+.lien {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 15px;
+        transition:  color 10s ease;
+        border-radius: 5px;
+      }
 
 .lien{
-    color: white;
+    padding: 0.5em;
+    color: white; 
+    transition: color 1.5s ease;
+}
+.lien:hover{
+    background-color: red;
+    color: rgba(255, 230, 0, 0.808);
+} 
+ /* .lien.active{
+    color: rgb(0, 195, 255)
+} */
+.logo{
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    font-size: x-large;
+    
+}
+.navi{
+    display: flex;
+    gap: 3.5em;
+    margin-right: 1em;
 }
 
-    
+.dev{
+    color: white;
+    /* text-decoration: none; */
+    text-decoration-color: rgba(255, 0, 0, 0.993);
+    filter: drop-shadow(0 0 10px rgba(119, 113, 113, 0.541));
+}
+
+.contact-border {
+    background-color: rgba(255, 0, 0, 0.993);
+    padding: 10px 15px;
+}
+
+.contact-border:hover {
+    filter: drop-shadow(0 0 10px rgb(223, 222, 218));
+  }
+
+.dev:hover{
+    filter: drop-shadow(0 0 10px rgba(241, 241, 241, 0.685));
+}
+      
+ /* L’effet brillant */
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+  }
+  
+  /* Animation au hover */
+  .logo:hover::before {
+    animation: shine 0.6s ease-in-out;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -75%;
+    }
+    100% {
+      left: 48%;
+    }
+  }
+  
