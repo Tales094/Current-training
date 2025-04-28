@@ -148,7 +148,7 @@ p{
     padding: 15px;
     line-height: 30px;
     border-radius: 10px;
-    max-width: 25%;
+    max-width: 25em;
   }
 
   .img-services {
@@ -204,9 +204,10 @@ html {
   padding: 10px;
   text-decoration: none;
   display: none;
-  /* position: fixed; position fixe block laccueil sur la page tout le temps */
-  position: relative;
-  left: 93.5%;
+  position: fixed; 
+ /*position fixe block laccueil sur la page tout le temps */
+  /* position: relative; */
+  left: 93.5%; 
   bottom: 10px;
   right: 20px;
   cursor: pointer;
