@@ -1,0 +1,117 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* grid */
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(8, 200px);
+    grid-template-rows: repeat(6, 200px);
+    justify-content: center;
+}
+.tete{
+    grid-column: 1/8;
+    grid-row: 1;
+}
+.b{
+    grid-column: 1/3;
+    grid-row:2;
+}
+.c{
+    grid-column: 1/8;
+    grid-row: 3/8;
+} 
+/* .gridcontainer{
+    display: grid;
+    grid-template-areas: 
+    "tete tete tete"
+    "menu content nav"
+    "footer footer foter";
+}
+.tete{
+   grid-area: tete;
+}
+ */
+
+
+
+
+
+
+ /* En-tête */
+.img{
+     width: 3%;
+     height: 3%;
+}
+.logo{
+ 
+}
+
+/* TItre */
+h1{
+    background-color:rgba(1, 21, 46, 0.89) ;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0;
+}
+h2, h3,h4{
+    font-weight: bolder;
+}
+
+h4{
+    color: white;
+}
+
+
+/* Bouton et lien     */
+.ensavoir{
+    border: 1px solid black;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(19, 136, 91);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+.sabonner{
+    border: 1px solid black;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(19, 136, 91);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+.categ{
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+    color: rgb(92, 92, 92);
+}
+.lien2{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+
+/* Fin de Page */
+.background{
+    background-color:rgba(1, 21, 46, 0.89) ;
+    color: rgb(92, 92, 92);
+
+}
+
+footer{
+    background-color:rgba(1, 21, 46, 0.89) ;
+    color: rgb(92, 92, 92);
+    padding: 30px;
+    text-align: center;
+    grid-column: 4/6;
+    grid-row: 6/6;
+}
+
+.logofin{
+    width: 3%;
+    height: 3%;   
+}
