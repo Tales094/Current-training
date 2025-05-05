@@ -8,185 +8,183 @@
     <title>Mise en page avec zones nommées (niveau medium)</title>
     <style></style>
   </head>
-  <body>
-    <div class="gridcontainer">
-      <header class="tete">
-        <div class="logo a">
-          <a class="image" href=""
-            ><img class="img a" src="images/trefle1.png" alt="image logo"
-          /></a>
-          <h1 class="a">EcoDesign</h1>
-        </div>
-      </header>
+  <body class="gridcontainer">
+    <header class="header">
+      <div class="logo">
+        <a class="image" href=""
+          ><img class="img-logo" src="images/trefle1.png" alt="image logo"
+        /></a>
+        <h1 class="">EcoDesign</h1>
+      </div>
+    </header>
 
-      <div class="menu b">
-        <a class="lien" href="">Accueil</a>
-        <a class="lien" href="">Services</a>
-        <a class="lien" href="">Portfolio</a>
-        <a class="lien" href="">Blog</a>
-        <a class="lien" href="">À propos</a>
-        <a class="lien" href="">Contact</a>
+    <div class="menu b">
+      <a class="lien" href="">Accueil</a>
+      <a class="lien" href="">Services</a>
+      <a class="lien" href="">Portfolio</a>
+      <a class="lien" href="">Blog</a>
+      <a class="lien" href="">À propos</a>
+      <a class="lien" href="">Contact</a>
+    </div>
+
+    <main class="content">
+      <div>
+        <section>
+          <h2>Conception web écoligique</h2>
+          <p>Publié le 21 avril 2025</p>
+          <p>
+            Le design web écoligique, aussi connu sous le nom d'éco-conception
+            web, est une approche de conception qui vise à réduire l'impact
+            environnemental des sites web et aplications en optimisant leur
+            efficacité énergétique.
+          </p>
+          <h3>Principes fondamentaux</h3>
+          <p>L'éco-conception repose sur plusieur principes:</p>
+          <ul>
+            <li>Optimasation des performances</li>
+            <li>Réduction du poids des pages</li>
+            <li>Minimisation des requêtes serveur</li>
+            <li>Chois d'héberguers éco-responsable</li>
+          </ul>
+
+          <h3>Bonne pratiques</h3>
+          <p>
+            Pour créer un site web plus respecteux de l'environnement, on peut:
+          </p>
+          <ul>
+            <li>
+              Compresser les images et utiliser des format modernes (WebP)
+            </li>
+            <li>Simplifier le design et évité les éléments surperflus</li>
+            <li>Réduire l'utilisation de JavaScript</li>
+            <li>Optimiser le CSS en éliminant les régles intutilisées</li>
+          </ul>
+          <h3>Avantage pour les utilisateurs</h3>
+          <p>Un site web éco-conçu offre généralement:</p>
+          <ul>
+            <li>Un changement plus rapide des pages</li>
+            <li>Une meilleur experience sur les appareils mobiles</li>
+            <li>Unea accessiblité améliorée</li>
+            <li>Une consommation réduite de données</li>
+          </ul>
+
+          <h3>Avantages pour les entreprises</h3>
+          <p>L'éco-conception présente également des bénéfices business:</p>
+          <ul>
+            <li>Réduction des coût d'infrastructure</li>
+            <li>Amélioration du référencement (SEO)</li>
+            <li>Augmentations des taux de conversion</li>
+            <li>Valorisation de l'image de marque</li>
+          </ul>
+          <p>
+            En adoptant ces pratiques, les développeurs et désigners peuvent
+            contribuer à réduire l'empreinte carbone du web, qui représente
+            aujourd'hui près de 4% des émissions mondiales de gaz à effet de
+            serre.
+          </p>
+          <a class="ensavoir" href="">En savoir plus</a>
+        </section>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="article">
+        <section>
+          <h3>Articles récents</h3>
+          <p>Optimisation des images pour le web</p>
+          <p>Comment réduire la consommation d'énergie de votre site</p>
+          <p>L'impact environnemental du streaming video</p>
+          <p>10 astuces pour un code plus propre</p>
+        </section>
       </div>
 
-      <main class="c">
-        <div>
-          <section>
-            <h2>Conception web écoligique</h2>
-            <p>Publié le 21 avril 2025</p>
-            <p>
-              Le design web écoligique, aussi connu sous le nom d'éco-conception
-              web, est une approche de conception qui vise à réduire l'impact
-              environnemental des sites web et aplications en optimisant leur
-              efficacité énergétique.
-            </p>
-            <h3>Principes fondamentaux</h3>
-            <p>L'éco-conception repose sur plusieur principes:</p>
-            <ul>
-              <li>Optimasation des performances</li>
-              <li>Réduction du poids des pages</li>
-              <li>Minimisation des requêtes serveur</li>
-              <li>Chois d'héberguers éco-responsable</li>
-            </ul>
+      <div>
+        <section class="newsl">
+          <h3>Newsletter</h3>
+          <p>
+            Recever nos conseils pour un web plus vert directement dans votre
+            boîte mail.
+          </p>
+          <form action="" method="post">
+            <label for="email"></label>
+            <input
+              class="Newslet"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre email"
+              required
+            />
+            <a class="sabonner" href="">S'abonner</a>
+          </form>
+        </section>
+      </div>
 
-            <h3>Bonne pratiques</h3>
-            <p>
-              Pour créer un site web plus respecteux de l'environnement, on
-              peut:
-            </p>
-            <ul>
-              <li>
-                Compresser les images et utiliser des format modernes (WebP)
-              </li>
-              <li>Simplifier le design et évité les éléments surperflus</li>
-              <li>Réduire l'utilisation de JavaScript</li>
-              <li>Optimiser le CSS en éliminant les régles intutilisées</li>
-            </ul>
-            <h3>Avantage pour les utilisateurs</h3>
-            <p>Un site web éco-conçu offre généralement:</p>
-            <ul>
-              <li>Un changement plus rapide des pages</li>
-              <li>Une meilleur experience sur les appareils mobiles</li>
-              <li>Unea accessiblité améliorée</li>
-              <li>Une consommation réduite de données</li>
-            </ul>
+      <div>
+        <section class="navig">
+          <h3>Catégories</h3>
+          <a class="categ" href="">Développement</a>
+          <a class="categ" href="">Design</a>
+          <a class="categ" href="">Performances</a>
+          <a class="categ" href="">SEO</a>
+          <a class="categ" href="">Accessiblité</a>
+        </section>
+      </div>
+    </aside>
 
-            <h3>Avantages pour les entreprises</h3>
-            <p>L'éco-conception présente également des bénéfices business:</p>
-            <ul>
-              <li>Réduction des coût d'infrastructure</li>
-              <li>Amélioration du référencement (SEO)</li>
-              <li>Augmentations des taux de conversion</li>
-              <li>Valorisation de l'image de marque</li>
-            </ul>
-            <p>
-              En adoptant ces pratiques, les développeurs et désigners peuvent
-              contribuer à réduire l'empreinte carbone du web, qui représente
-              aujourd'hui près de 4% des émissions mondiales de gaz à effet de
-              serre.
-            </p>
-            <a class="ensavoir" href="">En savoir plus</a>
-          </section>
-        </div>
+    <nav class="nav">
+      <div class="background">
+        <section>
+          <h4>EcoDesign</h4>
+          <p>Pour un web plus respecteux de notre planète</p>
+        </section>
 
-        <div>
-          <section>
-            <h3>Articles récents</h3>
-            <p>Optimisation des images pour le web</p>
-            <p>Comment réduire la consommation d'énergie de votre site</p>
-            <p>L'impact environnemental du streaming video</p>
-            <p>10 astuces pour un code plus propre</p>
-          </section>
-        </div>
+        <section>
+          <h4>Liens rapides</h4>
+          <a class="lien2" href="">Accueil</a>
+          <a class="lien2" href="">Services</a>
+          <a class="lien2" href="">Blog</a>
+          <a class="lien2" href="">Contact</a>
+        </section>
 
-        <div>
-          <section>
-            <h3>Newsletter</h3>
-            <p>
-              Recever nos conseils pour un web plus vert directement dans votre
-              boîte mail.
-            </p>
-            <form action="" method="post">
-              <label for="email">Email</label>
-              <input
-                class="Newslet"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Votre email"
-                required
-              />
-              <a class="sabonner" href="">S'abonner</a>
-            </form>
-          </section>
-        </div>
+        <section>
+          <h4>Contact</h4>
+          <p>123 Rue de l'Écologie 75000 Paris, France</p>
+          <p>Email:</p>
+          <p>Conctac@ecodesign.fr</p>
+          <p>Tél: +33 1 23 45 67 89</p>
+        </section>
 
-        <div>
-          <section>
-            <h3>Catégories</h3>
-            <a class="categ" href="">Développement</a>
-            <a class="categ" href="">Design</a>
-            <a class="categ" href="">Performances</a>
-            <a class="categ" href="">SEO</a>
-            <a class="categ" href="">Accessiblité</a>
-          </section>
-        </div>
+        <section>
+          <h4>Suivez-nous</h4>
+          <img
+            class="logofin"
+            src="images/logox.png"
+            title="Twitter"
+            alt="image1"
+          />
+          <img
+            class="logofin"
+            src="images/logfacebook.png"
+            title="Facebook"
+            alt="image2"
+          />
+          <img
+            class="logofin"
+            src="images/logoinsta.png"
+            title="Instagram"
+            alt="image3"
+          />
+          <img
+            class="logofin"
+            src="images/logoind1.png"
+            title="Indeed"
+            alt="image4"
+          />
+        </section>
+      </div>
+    </nav>
 
-        <div class="background">
-          <nav>
-            <section>
-              <h4>EcoDesign</h4>
-              <p>Pour un web plus respecteux de notre planète</p>
-            </section>
-
-            <section>
-              <h4>Liens rapides</h4>
-              <a class="lien2" href="">Accueil</a>
-              <a class="lien2" href="">Services</a>
-              <a class="lien2" href="">Blog</a>
-              <a class="lien2" href="">Contact</a>
-            </section>
-
-            <section>
-              <h4>Contact</h4>
-              <p>123 Rue de l'Écologie 75000 Paris, France</p>
-              <p>Email:</p>
-              <p>Conctac@ecodesign.fr</p>
-              <p>Tél: +33 1 23 45 67 89</p>
-            </section>
-
-            <section>
-              <h4>Suivez-nous</h4>
-              <img
-                class="logofin"
-                src="images/logox.png"
-                title="Twitter"
-                alt="image1"
-              />
-              <img
-                class="logofin"
-                src="images/logfacebook.png"
-                title="Facebook"
-                alt="image2"
-              />
-              <img
-                class="logofin"
-                src="images/logoinsta.png"
-                title="Instagram"
-                alt="image3"
-              />
-              <img
-                class="logofin"
-                src="images/logoind1.png"
-                title="Indeed"
-                alt="image4"
-              />
-            </section>
-          </nav>
-        </div>
-      </main>
-      <div class="sidebar"></div>
-
-      <footer>&copy 2025 EcoDesign. Tous droit réservés.</footer>
-    </div>
+    <footer class="footer">&copy 2025 EcoDesign. Tous droit réservés.</footer>
   </body>
 </html>
