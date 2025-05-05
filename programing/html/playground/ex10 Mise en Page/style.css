@@ -97,7 +97,6 @@ body{
 .footer {
     grid-area: footer;
     /* background:green; */
-   
 
     
 }
@@ -203,9 +202,9 @@ h4{
 /* Fin de Page */
 .background{
     padding: 10px;
-    /* background-color:rgba(1, 21, 46, 0.89) ; */
+    background-color:rgba(1, 21, 46, 0.89) ;
 
-    background-color:rgba(46, 1, 8, 0.89) ;
+    /* background-color:rgba(46, 1, 8, 0.89) ; */
     color: rgb(92, 92, 92);
     display: flex;
     justify-content: space-around;
