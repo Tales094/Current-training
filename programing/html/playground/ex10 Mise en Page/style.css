@@ -46,17 +46,33 @@ body{
     background-color: rgb(19, 136, 91);
     color: white;
     padding: 10px;
-}/* FIN DU MENU ET LIEN DU MENU */
+}
+/* FIN DU MENU ET LIEN DU MENU */
  
 
  /*DEBUT CONFIGURATION DU MENU MAIN  */
+
 .content {
     background-color: rgba(179, 166, 166, 0.185);
     grid-area: content;
-    padding: 20px;
- 
-   
-}/* FIN CONFIGURATION DU MENU MAIN */
+    padding: 20px;   
+}
+
+.avantage{
+    
+    
+}
+p, ul{
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+
+
+/* FIN CONFIGURATION DU MENU MAIN */
 
 /* DEBUT CONFIGURATION DU SIDEBAR(ASIDE) */
 .sidebar {
@@ -66,12 +82,12 @@ body{
     flex-direction: row;
     flex-wrap: wrap; 
 }
-.article{
+.article, .newsl, .navig{
     margin-top: 30px;
     margin-left: 30px; 
     margin-right: 30px; 
 }
-.newsl{
+/* .newsl{
     margin-top: 30px;
     margin-left: 30px; 
     margin-right: 30px;
@@ -81,7 +97,7 @@ body{
     margin-left: 30px; 
     margin-right: 30px;
    
-}
+} */
 .categ{
     /* display: flex; */
    display: block;
@@ -164,7 +180,12 @@ h4{
 
 
 /* Bouton et lien     */
+.savoir{
+    text-align: center;
+    margin-top: 20px;
+}
 .ensavoir{
+    text-align: center;
     border: 1px solid black;
     border-radius: 7px;
     border: none;
@@ -172,7 +193,13 @@ h4{
     color: white;
     text-decoration: none;
     padding: 8px;
+    
 }
+
+.abonner{
+    margin-top: 10px;
+}
+
 .sabonner{
     
     border: 1px solid black;
@@ -184,6 +211,8 @@ h4{
     padding: 5px 55px;
 }
 .categ{
+    
+    
     border: 1px solid gray;
     border-radius: 5px;
     text-decoration: none;
@@ -207,9 +236,20 @@ h4{
     /* background-color:rgba(46, 1, 8, 0.89) ; */
     color: rgb(92, 92, 92);
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
 
+}
+
+.lien-rapide{
+    display: grid;
+
+}
+
+.follow-we{
+    display: grid;
+    
+    
+    
 }
 
 footer{
@@ -225,9 +265,9 @@ footer{
 }
 
 .logofin{
-    width: 5%;
-    height: 5%;   
-    display: flex;
+    width: 30px;
+    height: 30px;
+   
 }
 .nav{
     
