@@ -1,0 +1,90 @@
+body{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 24px; /*0.75em 1.5em*/
+    font-size: 16px; */
+}
+
+
+/* configuration bouton */
+.center{
+    text-align: center;
+    margin-top: 30px;
+}
+.button{
+    margin-top: 60px;
+    
+}
+
+
+
+.btn-primary{
+    background-color: rgb(0, 162, 255);  /*1.couleur differente pour btn*/
+    color: white;                        /*2.couleur dif pour txt*/
+    /* border: none; */
+    padding: 8px;
+    border-radius: 7px;
+    padding-left: 25px;                    /* forme btn*/
+    padding-right: 25px;
+    font-weight: bold;
+    border-color: white;
+    cursor: pointer;
+
+}
+
+.btn-secondary{
+    background-color: rgb(165, 164, 164);   /*1.couleur differente pour btn*/
+    color: white;                           /*2.couleur dif pour txt*/
+    padding: 8px;
+    border-radius: 7px;
+    padding-left: 25px;
+    padding-right: 25px;                     /* forme btn*/
+    font-weight: bold;
+    border-color: white;
+    cursor: pointer;
+
+
+
+}
+.btn-danger{
+    background-color: red;   /*1.couleur differente pour btn*/
+    color: white;            /*2.couleur dif pour txt*/
+    padding: 8px;
+    border-radius: 7px;
+    padding-left: 25px;
+    padding-right: 25px;       /* forme btn*/
+    font-weight: bold;
+    border-color: white;
+    cursor: pointer;
+
+
+}
+p{
+    margin-top: 30px;
+    color: gray;
+    font-style: italic;
+}
+
+/* effet hover */
+
+.btn-primary:hover{
+    background-color: rgba(0, 128, 0, 0.774);
+}
+
+
+.btn-secondary:hover{
+    background-color: rgba(0, 128, 0, 0.774);
+}
+
+.btn-danger:hover{
+    background-color: rgba(0, 128, 0, 0.774);
+}
+
+/*Effet Transition */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+    transition: 
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}

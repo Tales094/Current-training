@@ -83,10 +83,18 @@ p, ul{
     flex-wrap: wrap; 
 }
 .article, .newsl, .navig{
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 30px; 
     margin-right: 30px; 
 }
+.article{
+    border-bottom: 1px solid black;
+}
+.newsl{
+    
+    border-bottom: 1px solid black;
+}
+
 /* .newsl{
     margin-top: 30px;
     margin-left: 30px; 
@@ -101,6 +109,7 @@ p, ul{
 .categ{
     /* display: flex; */
    display: block;
+  
     
 }
 
@@ -198,6 +207,7 @@ h4{
 
 .abonner{
     margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .sabonner{
@@ -262,6 +272,12 @@ footer{
     text-align: center;
     /* grid-column: 4/6;
     grid-row: 6/6; */
+}
+
+.follow-we{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logofin{
