@@ -12,9 +12,8 @@ body{
 }
 .button{
     margin-top: 60px;
-    
+    transition: transform 0.1s ease;
 }
-
 
 
 .btn-primary{
@@ -73,6 +72,7 @@ body{
     border-color: white;
     cursor: pointer;
     border: none;
+    transition: transform 0.1s ease;
 }
 
 
@@ -101,10 +101,10 @@ p{
 
 .btn-primary:hover{
     background-color: rgba(0, 128, 0, 0.774);
-    transform: scale(1.5,2);
+    /* transform: scale(1.5,2); */
     box-shadow: 10px 10px 15px rgba(14, 13, 13, 0.473);
     animation:  ombreFlash 5s ease-in-out infinite; /*ombre apparaite continuellement(forwards=Apparait que durant ça duré)*/
-   
+    transform: translateY(-2px)
 
     
 }
@@ -112,7 +112,9 @@ p{
 
 
 .btn-secondary:active{
-    Transform: translateY(2px); /*effet bouton effoncer*/
+     transform:  scale(0.80);/*effet bouton effoncer*/
+    
+    
     
     
 }
@@ -133,7 +135,9 @@ p{
 
 
 .btn-secondary:hover{
-    background-color: rgb(255, 230, 3);
+    background-color: rgba(8, 8, 8, 0.562); /*effet ombre*/
+    opacity: 3;
+    transform: scale(1.1,2);
 }
 
 .btn-danger:hover{
