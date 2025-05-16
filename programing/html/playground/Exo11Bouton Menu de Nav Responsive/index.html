@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Menu de navigation responsive (niveau medium)Exercice 3</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./icon/Rockstar-Games-GTA6.ico"
+    />
+  </head>
+  <body>
+    <header>
+    <div class="entete">
+      <a class="logo" href="">NaviPro</a>
+      <nav >
+        
+        <div >
+        <input id="mobile" type="checkbox" />
+        <label for="mobile" class="logo logo-mobile">
+          <ul class="menu">
+            <li>
+              <a class="lien" href=""><i class="fa-solid fa-house"></i>  Accueil</a>
+            </li>
+            <li>
+              <a class="lien" href=""
+                ><i class="fa-solid fa-briefcase"></i>  Service</a>
+            </li> 
+            
+            <li class="lien content-link dropdown-bouton">
+              <a class="lien" href=""> 
+                <input type="checkbox" id="toggle-produits" hidden />
+                <label for="toggle-produits" class="lien">
+                <i class="fa-solid fa-cubes"></i></i>  Produits  <i class="fa-solid fa-arrow-up"></i></a>
+                <!-- menu drop* -->
+                
+                <ul class="dropdown-menu">
+                    <li><a class="lien" href="">Produit 1</a></li>
+                    <li><a class="lien" href="">Produit 2</a></li>
+                    <li><a class="lien" href="">Produit 3</a></li>
+                </ul>
+            
+            </li>
+            
+            <li>
+              <a class="lien" href="">
+                <i class="fa-solid fa-circle-info"></i></i>  À propos</a
+              >
+            </li>
+            <li><a class="lien" href=""><i class="fa-solid fa-envelope"></i>  Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </header>
+    <main>
+        <div class="title-container">
+            <h1>Menu de Navigation Responsive</h1>
+            <p>Un exemple de menu responsive avec transition fluides et sous-menus déroulants, réalisé entièrement en CSS.</p>
+        </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
