@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(3, 3, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+:root {                                         /*couleur par default*/
+  --couleur-primaire: #e71111;
+  --couleur-secondaire: #f3f3f3;
+  --duree-animation: 1s;
+}
+
+.loader {                                   /*Configaration du cercle de chargement*/
+  width: 55px;
+  height: 55px;
+  border: 5px solid var(--couleur-secondaire);
+  border-top: 5px solid var(--couleur-primaire);
+  border-radius: 50%;
+  margin-left: 180px;
+  margin-left: 180px;
+  margin-top: 25px;
+
+}
+
+@keyframes rotation {                               /*Mouvement Du Chargement (direction)*/
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {                                       /*Temps du chargement*/
+  animation: rotation var(--duree-animation) linear infinite;
+}
+
+
+/* Barre de progression horizontale */
+.progress-bar {
+  width: 200px;
+  height: 10px;
+  background-color: var(--couleur-secondaire);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: var(--couleur-primaire);
+  animation: progress-animation 2s ease-in-out infinite;
+}
+
+
+
+/* Animation barre de progression */
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

@@ -1,0 +1,114 @@
+:root{
+    --couleur-tittle-bouton: rgb(131, 3, 3);
+    --couleur-paragraphe: rgb(148, 147, 147);
+    --couleur-bouton-texte: white;
+}
+
+
+body{
+
+}
+
+.grid-container{
+ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    /* justify-content: center; */
+    gap: 20px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    /* align-content: flex-end; */
+
+
+    
+}
+.design, .developpement, .marketing{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+      border: 3px solid rgba(124, 123, 123, 0.219);
+      border-radius: 20px;
+      margin-bottom: 10px;
+      overflow: hidden;   /*Configuration pour la faire apparaitre les carte progressivmenet*/
+      transform: translateY(30PX);
+      opacity: 0;
+      animation: fadeInUp 0.9s ease-out forwards;
+
+}
+/* Delay dse apparition */
+.design:nth-child(1) { animation-delay: 0.3s; }
+.developpement:nth-child(2) { animation-delay: 0.6s; }
+.marketing:nth-child(3) { animation-delay: 0.9s; }
+/* Activation de l"effet D'apparition */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* effet zoom sur image */
+img{
+      border-bottom: 3px solid rgba(0, 0, 0, 0.37);
+      background-color: rgba(175, 175, 175, 0.37);
+      transition: transform 0.3s ease;
+      
+}
+/* dimmension du zoom */
+.design:hover img, .developpement:hover img, .marketing:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+h1{
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: var(--couleur-tittle-bouton);
+    font-weight: bolder;
+}
+p{
+ color: var(--couleur-paragraphe) ; 
+ margin-left: 20px;
+ margin-right: 20px;
+}
+h2{
+    color: var(--couleur-tittle-bouton);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.bouton{
+    border: 1px solid black;
+    border: none;
+    padding: 8px;
+    border-radius: 60px;
+    margin-left: 20px;
+   margin-right: 220px;
+   margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: var(--couleur-tittle-bouton);
+    color: var(--couleur-bouton-texte);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+.bouton:hover {
+    background-color: rgb(243, 5, 5);
+    transform: scale(1.05);
+}
+
