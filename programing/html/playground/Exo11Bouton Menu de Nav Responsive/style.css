@@ -1,5 +1,42 @@
+:root {  /*palette Valeur par default */
+   --couleur-background-Par: black; 
+    --couleur-logo-header: rgb(15, 147, 235);
+    --couleur-paragraphe: black;
+    --couleur-menu-tittle-h1: black;
+    --couleur-header-nav: rgb(163, 163, 163);
+    --couleur-body: rgb(224, 224, 224);
+
+} 
+
+ @media (prefers-color-scheme: dark){
+    :root {
+      --duree-transition: 0.3s;
+      --effet-transition: ease-in-out;
+      --echelle-hover: 1.05;
+      --couleur-body: rgba(20, 20, 20, 0.979);
+      --couleur-logo-header: rgb(15, 147, 235);
+      --couleur-menu-tittle-h1: rgb(255, 255, 255);
+      --couleur-paragraphe: rgba(214, 214, 214, 0.863);
+      --couleur-background-Par: rgba(128, 128, 128, 0.123);
+    }
+  }
+
+.theme-sombre{    /* palette valeur active*/
+    --duree-transition: 0.3s;
+    --effet-transition: ease-in-out;
+    --echelle-hover: 1.05;
+    --couleur-Body: rgba(20, 20, 20, 0.979);
+    --couleur-logo-header: rgb(15, 147, 235);
+    --couleur-menu-tittle-h1: rgb(255, 255, 255);
+    --couleur-Paragraphe: rgba(214, 214, 214, 0.863);
+    --couleur-background-Par: rgba(128, 128, 128, 0.123); 
+  
+}
+
+
 body{         /*Color du body*/
-    background-color: rgb(224, 224, 224);
+    background-color: var(--couleur-body);
+    transition: var(--duree-transition) var(--effet-transition);
 }
 
 .entete{       /* bar de Navigation*/
@@ -7,8 +44,10 @@ body{         /*Color du body*/
     left: 0;
     right: 0;
     position: absolute;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.685);
-    background-color: rgb(211, 211, 211);
+    border-bottom: 4px solid var(--couleur-background-Par);
+    background-color: var(--couleur-header-nav);
+    transition: background-color var(--duree-transition) var(--duree-transition);
+    transition: border-bootom var(--duree-transition) var(--effet-transition);
     color: white;
     padding: 20px;
     display: flex;
@@ -19,20 +58,24 @@ body{         /*Color du body*/
 
 .logo{              /*Config du logo*/
     text-decoration: none;
-    color: rgb(15, 147, 235);    
+    color: var(--couleur-logo-header);
+        
     font-size: 60px;
     font-weight: bolder;
 }
 .lien{              /*Config des lien*/
     text-decoration: none;
-    color: black;
+    color: var(--couleur-menu-tittle-h1);
+   transition: var(--duree-transition) var(--effet-transition) ;
     font-size: 20px;
     font-weight: bold;
 }
 .lien:hover{
     /* border: 1px solid black; */
     /* border: none; */
-    color: rgb(15, 147, 235);
+    --duree-transition: 0.3s;
+    --effet-transition: ease-in-out;
+    --echelle-hover: 1.05;
 }
 .menu{              /*Config le menu: Affiche les lien en ligne avec un espace entre eux (gap)*/
     display: flex;
@@ -60,11 +103,16 @@ body{         /*Color du body*/
         margin-left: 20px;
         margin-right: 20px;
     }
-
+h1{
+    color: var(--couleur-menu-tittle-h1);
+    transition: var(--duree-transition) var(--effet-transition);
+}
     p{
         align-items: center;
         margin-left: 10px;
         margin-right: 10px;
+        color: var(--couleur-menu-tittle-h1);
+        transition: var(--duree-transition) var(--effet-transition);
     }
     /* <!-- menu drop* --> */
     .dropdown-menu{
@@ -77,6 +125,8 @@ body{         /*Color du body*/
         border: none;
         border-radius: 10px;
         font-size: 15px;    
+        background-color: rgb(163, 163, 163);
+        transition:background-color var(--duree-transition) var(--effet-transition) var(--echelle-hover); 
     } 
     
     .dropdown-bouton:hover > .dropdown-menu{
@@ -84,7 +134,9 @@ body{         /*Color du body*/
         position: absolute;
         right: 30px;
         left: 0;
-        background-color: rgb(211, 211, 211);
+        /* background-color: rgb(163, 163, 163); */
+
+        /* transition:background-color var(--duree-transition) var(--effet-transition) var(--echelle-hover);  */
         z-index: 310;
         justify-content: space-evenly;
     } 
@@ -95,7 +147,7 @@ body{         /*Color du body*/
     .fa-arrow-up{
         transform: rotate(0.5turn); 
         transition: ease-in-out;
-        transition-duration: 0.3s;
+        transition-duration: 0.5s;
     }
 
 /* menu burguer */
@@ -108,3 +160,4 @@ body{         /*Color du body*/
 #mobile:checked ~ .menu {
     display: flex;
 }
+
