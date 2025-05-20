@@ -2,6 +2,14 @@
     --couleur-tittle-bouton: rgb(131, 3, 3);
     --couleur-paragraphe: rgb(85, 84, 84);
     --couleur-bouton-texte: white;
+    --couleur-box-shadow: rgb(7, 7, 7);
+    --couleur-border-DDM: rgba(124, 123, 123, 0.219); 
+    --couleur-background-card: rgba(255, 255, 255, 0.8); 
+    --couleur-border-bottom: rgba(0, 0, 0, 0.37);
+    --couleur-shadow-h1: rgba(0, 0, 0, 0.4);
+    --couleur-base: black;
+    --couleur-hover: rgb(243, 5, 5);
+
 }
 
 html, body {
@@ -45,16 +53,16 @@ height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    border: 3px solid rgba(124, 123, 123, 0.219);
+    border: 3px solid var(--couleur-border-DDM);
     border-radius: 20px;
     margin-bottom: 10px;
-    box-shadow: 10px 5px 5px rgb(7, 7, 7); /* Effet Ombre */
+    box-shadow: 10px 5px 5px var(--couleur-box-shadow); /* Effet Ombre */
     overflow: hidden;   /*Configuration pour la faire apparaitre les carte progressivmenet*/
     transform: translateY(30PX);
     opacity: 0;
     animation: fadeInUp 0.9s ease-out forwards;
     
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: var(--couleur-background-card); 
     border-radius: 20px;
     padding: -100px;
 
@@ -78,8 +86,8 @@ height: 100vh;
 
 /* effet zoom sur image */
 img{
-      border-bottom: 3px solid rgba(0, 0, 0, 0.37);
-      background-color: rgba(175, 175, 175, 0.37);
+      border-bottom: 3px solid var(--couleur-border-bottom);
+      /* background-color: rgba(175, 175, 175, 0.37); */
       transition: transform 0.3s ease;
       
 }
@@ -104,10 +112,10 @@ h1{
     width: 400px;
     height: 100px;
     line-height: 100px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 4px 10px var(--couleur-shadow-h1);
     display: flex;
     justify-content: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 4px var(--couleur-shadow-h1);
   
    
 }
@@ -120,7 +128,25 @@ h2{
     color: var(--couleur-tittle-bouton);
     margin-left: 20px;
     margin-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+    width: fit-content;
+   
 }
+h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    margin: 0;
+    background: var(--couleur-hover);
+    transition: width 0.4s ease-in-out;
+}
+.cards:hover h2::after{
+    width: 100%;
+}
+
 .bouton{
     border: 1px solid black;
     border: none;
@@ -128,22 +154,32 @@ h2{
     border-radius: 60px;
     margin-top: 15px ;
     margin-left: 20px;
-   margin-right: 220px;
-   margin-bottom: 15px;
+    margin-right: 220px;
+    margin-bottom: 15px;
     font-size: 18px;
     font-weight: bolder;
+
     background-color: var(--couleur-tittle-bouton);
     color: var(--couleur-bouton-texte);
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s, transform 0.3s;
-   
+    /* transition: background-color 0.3s, transform 0.3s; */
+
+   background: linear-gradient(
+    to right,
+    var(--couleur-hover) 50%,
+    var(--couleur-tittle-bouton) 50%
+   );
+   background-size: 200%;
+   background-position: right bottom;
+   transition: all 0.4s ease-in-out;
     
     
 }
 
 .bouton:hover {
-    background-color: rgb(243, 5, 5);
-    transform: scale(1.05);
+    /* background-color: var(--couleur-hover); */
+    background-position: left bottom;
+    /* transform: scale(1.05); */
 }
 
