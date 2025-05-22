@@ -1,158 +1,99 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 12px 24px; 0.75em 1.5em 
-    font-size: 16px;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 24px; /* 0.75em 1.5em  */
+  font-size: 16px;
 }
-
 
 /* configuration bouton */
-.center{
-    text-align: center;
-    margin-top: 30px;
+.center {
+  text-align: center;
+  margin-top: 30px;
 }
-.button{
-    margin-top: 60px;
-    transition: transform 0.1s ease;
+.button {
+  margin-top: 60px;
 }
 
 
-.btn-primary{
-    
-
-    background-color: rgb(0, 162, 255);  /*1.couleur differente pour btn*/
-    color: white;                        /*2.couleur dif pour txt*/
-    /* border: none; */
+.btn {
     padding: 8px;
     border-radius: 7px;
-    padding-left: 25px;                    /* forme btn*/
-    padding-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px; /* forme btn*/
     font-weight: bold;
     border-color: white;
     cursor: pointer;
-    /* box-shadow: 0 0 0 rgba(0, 0, 0, 0.548);  */
-    /* transition: box-shadow 0.3s ease-in-out; */
-    /* animation:  ombreFlash 5s ease-in-out infinite; ombre apparaite continuellement(forwards=Apparait que durant ça duré) */
 }
 
 
-@keyframes ombreFlash {
-    0% {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-      }
-      30% {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* ombre visible */
-      }
-      100% {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* ombre disparaît */
-      }
-    }
+.background-primary {
+  background-color: rgb(0, 162, 255); /*1.couleur differente pour btn*/
+  color: white; /*2.couleur dif pour txt*/
+}
 
 /* .btn-primary:active{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 } */
-
-
-
-
-
-
-
-
-
-
-
-.btn-secondary{
-    background-color: rgb(165, 164, 164);   /*1.couleur differente pour btn*/
-    color: white;                           /*2.couleur dif pour txt*/
-    padding: 8px;
-    border-radius: 7px;
-    padding-left: 25px;
-    padding-right: 25px;                     /* forme btn*/
-    font-weight: bold;
-    border-color: white;
-    cursor: pointer;
-    border: none;
-    transition: transform 0.1s ease;
+.background-secondary {
+  background-color: rgb(165, 164, 164); /*1.couleur differente pour btn*/
+  color: white; /*2.couleur dif pour txt*/
+  border: none;
 }
 
-
-
-
-.btn-danger{
-    background-color: red;   /*1.couleur differente pour btn*/
-    color: white;            /*2.couleur dif pour txt*/
-    padding: 8px;
-    border-radius: 7px;
-    padding-left: 25px;
-    padding-right: 25px;       /* forme btn*/
-    font-weight: bold;
-    border-color: white;
-    cursor: pointer;
-
-
+.background-danger {
+  background-color: red; /*1.couleur differente pour btn*/
+  color: white; /*2.couleur dif pour txt*/
 }
-p{
-    margin-top: 30px;
-    color: gray;
-    font-style: italic;
+
+p {
+  margin-top: 30px;
+  color: gray;
+  font-style: italic;
 }
 
 /* effet hover */
 
-.btn-primary:hover{
-    background-color: rgba(0, 128, 0, 0.774);
-    /* transform: scale(1.5,2); */
-    box-shadow: 10px 10px 15px rgba(14, 13, 13, 0.473);
-    animation:  ombreFlash 5s ease-in-out infinite; /*ombre apparaite continuellement(forwards=Apparait que durant ça duré)*/
-    transform: translateY(-2px)
-
-    
-}
-    
-
-
-.btn-secondary:active{
-     transform:  scale(0.80);/*effet bouton effoncer*/
-    
-    
-    
-    
+.btn-primary:hover {
+  background-color: rgba(0, 128, 0, 0.774);
+  /* transform: scale(1.5,2); */
+  box-shadow: 10px 10px 15px rgba(14, 13, 13, 0.473);
+  animation: ombreFlash 5s ease-in-out infinite; /*ombre apparaite continuellement(forwards=Apparait que durant ça duré)*/
+  transform: translateY(-2px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.btn-secondary:hover{
-    background-color: rgba(8, 8, 8, 0.562); /*effet ombre*/
-    opacity: 3;
-    transform: scale(1.1,2);
+.btn-secondary:active {
+  transform: scale(0.8); /*effet bouton effoncer*/
 }
 
-.btn-danger:hover{
-    background-color: rgb(255, 145, 0);
+.btn-secondary:hover {
+  background-color: rgba(8, 8, 8, 0.562); /*effet ombre*/
+  opacity: 3;
+  transform: scale(1.1, 2);
+}
+
+.btn-danger:hover {
+  background-color: rgb(255, 145, 0);
 }
 
 /*Effet Transition */
 .btn-primary,
 .btn-secondary,
 .btn-danger {
-    transition-property: 
-        background-color 0.3s ease-in-out;
-        /* box-shadow 0.3s ease,
+  transition-property: background-color 0.3s ease-in-out;
+  /* box-shadow 0.3s ease,
         transform 0.2s ease; */
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-    transition-delay: 0.1s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.1s;
+}
+
+@keyframes ombreFlash {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  30% {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* ombre visible */
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* ombre disparaît */
+  }
 }

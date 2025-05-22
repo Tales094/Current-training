@@ -21,7 +21,8 @@ h1{                                     /*couleur h1,taille et position*/
   --couleur-primaire: #3498db;
   --couleur-secondaire: #f3f3f3;
   --couleur-terciaire: red;
-  --duree-animation: 1.5s;
+  --duree-animation: 0.9s;
+  --duree-animation2: 2.5s;
 }
 
 .loader {                                   /*Configaration du cercle de chargement*/
@@ -46,7 +47,8 @@ h1{                                     /*couleur h1,taille et position*/
 }
 
 .loader {                                       /*Temps du chargement*/
-  animation: rotation var(--duree-animation) linear infinite;
+  animation: rotation var(--duree-animation) linear infinite alternate;
+ 
 }
 
 
@@ -60,14 +62,14 @@ h1{                                     /*couleur h1,taille et position*/
   margin-left: 60px;
   margin-right: 60px;
   margin-top: 25px;
-  overflow: hi;
+  overflow: hidden;
 }
 
 .charge{
   height: 100%;
   width: 0;
   background-color: var(--couleur-terciaire);
-  animation: charge-animation 2s ease-in-out infinite;
+  animation: charge-animation 10s ease-in-out forwards; 
 }
 
 
@@ -75,10 +77,87 @@ h1{                                     /*couleur h1,taille et position*/
   0% {
     width: 0%;
   }
-  50% {
+  100% {
     width: 100%;
   }
-  100% {
-    width: 0%;
+}
+.circle{
+  width: 35px;
+  height: 35px;
+  border-radius: 60px;
+  box-shadow: 0px 0px 1px 1px #1a1919d0;
+}
+.red{
+  background-color: red;
+}
+.pulse{
+  animation: pulse-animation 0.5s infinite;
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(5, 5, 5, 0.863);
   }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+.pulse-text {
+    animation: pulse-text 0.5s infinite;
+}
+
+@keyframes pulse-text {
+  0% {
+  text-shadow: 0px 0px 0px rgba(255, 255, 0, 0.301);
+  }
+  100% {
+   text-shadow: 0px 0px 7px yellow;
+  }
+}
+@keyframes pulse-triangle {
+  0% {
+    filter: drop-shadow(1px 1px 4px #f30a0a25);
+  }
+  100% {
+     filter: drop-shadow(1px 1px 4px #ff0000);
+  }
+}
+
+h2{
+  margin-top: 60px;
+  text-align: center;
+  color: yellow;
+  background-color: red;
+  border-radius: 1000px;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 90px solid rgb(250, 0, 0); /* La couleur du triangle */
+  
+  animation: pulse-triangle 0.5s infinite; */
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 90px solid black;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 90px solid black;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 90px solid black;
 }
