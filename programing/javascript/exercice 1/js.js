@@ -101,7 +101,7 @@ console.log(nomComplet);
 let sujet = "Le Chat" ;
 let verbe = "mange" ;
 let ojbet = "la souris" ;
- let phrase = `${sujet} ${verbe} ${ojbet}`
+let phrase = `${sujet} ${verbe} ${ojbet}`
 
 
 
@@ -113,3 +113,26 @@ console.log("Text :", phrase);
 
 
 
+// EXPLEMPLE
+// 1: function
+
+
+function bonjour(){
+    console.log("Je vous salut");
+    
+}
+
+
+
+
+
+bonjour();
+
+let text = "Je fait un test"
+function phrase() {
+    console.log(text);
+    
+}
+phrase()
+phrase()
+phrase()
