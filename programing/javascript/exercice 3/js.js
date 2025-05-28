@@ -86,19 +86,18 @@ let phrases = data.topping[6].type + " de la meme maniére que " + data.name;
  console.log(comptebancaire.titulaire);
 
 
- console.table(comptebancaire)
-
+ 
  let solde = 500;
  let resultat= comptebancaire.solde + solde;
   console.log(resultat);
 
 
   
-
+// 2eme méthode
  
  console.log("Solde initial :",comptebancaire.solde);
 
 comptebancaire.solde += 500;
 
 console.log("Nouveau solde:",comptebancaire)
- 
+ console.table(comptebancaire)
