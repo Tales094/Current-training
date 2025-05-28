@@ -13,19 +13,19 @@ function multi(a,b){
 console.log("Resultat :", multi (7,8));
 
 
-function ville(grandesynthe){
-    console.log(paris);
-    console.log(marsaille);
-    console.log(lyon);
-    console.log(brussel);
-    return `Ma ville est $(grande-synthe)`
+function ville(a,b,c,d,e){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    return `Ma ville est ${e}`
     console.log(amsterdam);
     console.log(ultrech);
     console.log(hambourg); 
     
 }
 
-console.log(ville);
+console.log(ville("paris","brussel", "lyon", "marsaille", "grande-synthe"));
 
  
 
@@ -43,16 +43,47 @@ console.log(ville);
 let tab = [1,2,3,4,5];
 
 
-console.log(let tab = [1]);
- 
+console.log(tab = [1]);
+console.log(tab = [2]);
+console.log(tab = [3]);
+console.log(tab = [4]);
+console.log(tab = [5]);
 
 
 // console.log(tab);
 
-// console.table(tab)
+console.table(tab)
 
-// let tab2 = []
-// console.log();
+ let tableau = []
 
-// console.table(tab2)
+
+ tableau.push(10,20,30)
+
+
+// tableau.shift()
+let firstElement = tableau.shift();
+
+
+ console.log(tableau);
+
+  console.table(tableau)
+
+
+// Exercice 3
+let obj ={
+    nom : "brant" ,
+    prenom : "thomas", 
+    age : "36",   
+}
+
+
+console.log(obj.prenom);
+
+let tab6 = ["test", "ok", "voiture", "poupi"]
+
+console.log(tab6)
+console.table(tab6)
+
+
+
 
