@@ -190,7 +190,55 @@ for (let inde = 1; inde <= 20 ; inde++){
         
     }
 }
+//  exercice 6
+
+const carre = document.querySelector("carre")
+const boddy = document.body
+
+console.log(carre);
+
+carre.addEventListener("click", () =>{
+    console.log("carre");
+    carre.style.backgroundColor = "yellow";
+    carre.style.width = "600px";
+    
+})
+
+// function ageer(a,b){
+//     typeEvent = a;
+//     test = b
+// }
+//  ageer(18)
+// EventTarget.addEventi.is
+
+// meme chose
+// function test ({
+
+// })
+
+// let test = () =>{
+
+// }
 
 
 
 
+
+// console.log(test);
+// exemple:
+const carre = document.getElementById('test');
+const body = document.body
+
+function changeSize(elem,w,h){
+    const carre = document.getElementById(elem);
+
+    carre.addEventListener("click", () => {
+    carre.style.backgroundColor = "yellow";
+    carre.style.width = w + "px";
+    carre.style.height = h + "px";
+    
+})
+}
+
+changeSize("test", 300, 500)
+changeSize("demo2", 600, 10)

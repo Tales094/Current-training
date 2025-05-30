@@ -95,4 +95,31 @@ let age = 20;
  else {
     console.log()
  }
+ 
+ 
+ 
+ 
+ //exercice 5
+  for ( let index = 0; index < Array.length; index++){
+
+  }
+
+nombre++
+nombre = nombre + 1
+i++
+i = i + 1
+i += 1
+
+
+  for ( let i = 0, i < 20; i++){
+
+  }
+ let tab4 = ["bordeaux", "montp", "31 toulouse"]
+
+ console.log(tab[0]);
+ 
+ 
+
+ 
+//  exercice 6
 
