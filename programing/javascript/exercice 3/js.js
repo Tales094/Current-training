@@ -100,4 +100,4 @@ let phrases = data.topping[6].type + " de la meme maniére que " + data.name;
 comptebancaire.solde += 500;
 
 console.log("Nouveau solde:",comptebancaire)
- console.table(comptebancaire)
+ 

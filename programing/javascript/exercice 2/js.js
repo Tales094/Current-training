@@ -85,5 +85,14 @@ console.log(tab6)
 console.table(tab6)
 
 
+// exercice 4
 
+let age = 20;
+ if ( age >= 18){
+    console.log("la personne est majeur")
+ }
+
+ else {
+    console.log()
+ }
 
