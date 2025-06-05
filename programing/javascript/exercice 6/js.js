@@ -34,7 +34,7 @@ if (!isPlaying)
         // isFinish = true; //La PARTIE PEUT COMMENCER//
         // isFinish + false; // Debloque le jeu//
         // turnePlayer = 0; // remet e joueur a 0//
-        // changeCurrentPlayer()
+        changeCurrentPlayer()
 
         isPlaying = !isPlaying;
         button.textContent = isPlaying ? "RESTART" : "PLAY GAME";
