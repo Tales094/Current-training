@@ -20,32 +20,42 @@ let timeout = null;
       // Bloque les clics pendant l’attente
       if (timeout) return;
     // change le txt en "lest go" 
-    //   button.textContent = "Lest Go";
+if (!isPlaying)
+      button.textContent = "LEST GO !!";
 
       if (button.textContent === "PLAY GAME") {
         button.textContent = "RESTART";
-      }
+      
     // else {
     //     button.textContent = "PLAY GAME";
     //   }
 
       timeout = setTimeout(() => {
+        // isFinish = true; //La PARTIE PEUT COMMENCER//
+        // isFinish + false; // Debloque le jeu//
+        // turnePlayer = 0; // remet e joueur a 0//
+        // changeCurrentPlayer()
+
         isPlaying = !isPlaying;
         button.textContent = isPlaying ? "RESTART" : "PLAY GAME";
         timeout = null;
-      }, 1500); // 1 secondes
+      }, 1500);// 1 secondes
+    }
+    
 
  // Réinitialisation de la grille
-  function renitialiser (cells = [c1, c2, c3, c4, c5, c6, c7, c8, c9]){
-  cells.forEach(cell => {
-    cell.style.backgroundImage = "";
-  });
-  isFinish = false;
+    else {
+        const cells = [c1, c2, c3, c4, c5, c6, c7, c8, c9];
+        cells.forEach(cell => {
+        cell.style.backgroundImage = "";
+     });
+    isFinish = false;
 }
 
   // Remise à zéro du joueur
   turnePlayer = 0;
 }, 3000);
+
 
 
     
@@ -277,13 +287,15 @@ else
     //     [c1, c5, c9],
     //     [c3, c5, c7]
     // ];
+// for (let comboV of winCombosVictoire){
+    //     const [a,b,c] = comboV
+
+
 
    // VICTOIRE TONY //
 
     // Horizontal //
-    // for (let comboV of winCombosVictoire){
-    //     const [a,b,c] = comboV
-
+    
 if (c1.style.backgroundImage.includes("tony2.jpg") && c2.style.backgroundImage.includes("tony2.jpg") && c3.style.backgroundImage.includes("tony2.jpg")){
         console.log("VICTOIRE TONY"); 
         scoreTony++;
@@ -344,8 +356,6 @@ if (c3.style.backgroundImage.includes("tony2.jpg") && c5.style.backgroundImage.i
     }
 
 
-
-
 //  Victoire SOSSA //
 
     // Horizontal //
@@ -353,21 +363,21 @@ if (c3.style.backgroundImage.includes("tony2.jpg") && c5.style.backgroundImage.i
 if (c1.style.backgroundImage.includes("sossa2.jpg") && c2.style.backgroundImage.includes("sossa2.jpg") && c3.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA");
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }
 if (c4.style.backgroundImage.includes("sossa2.jpg") && c5.style.backgroundImage.includes("sossa2.jpg") && c6.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA"); 
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }
 if (c7.style.backgroundImage.includes("sossa2.jpg") && c8.style.backgroundImage.includes("sossa2.jpg") && c9.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA");   
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }
@@ -375,21 +385,21 @@ if (c7.style.backgroundImage.includes("sossa2.jpg") && c8.style.backgroundImage.
 if (c1.style.backgroundImage.includes("sossa2.jpg") && c4.style.backgroundImage.includes("sossa2.jpg") && c7.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA"); 
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }
 if (c2.style.backgroundImage.includes("sossa2.jpg") && c5.style.backgroundImage.includes("sossa2.jpg") && c8.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA");   
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }
 if (c3.style.backgroundImage.includes("sossa2.jpg") && c6.style.backgroundImage.includes("sossa2.jpg") && c9.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA"); 
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }
@@ -398,14 +408,14 @@ if (c3.style.backgroundImage.includes("sossa2.jpg") && c6.style.backgroundImage.
 if (c1.style.backgroundImage.includes("sossa2.jpg") && c5.style.backgroundImage.includes("sossa2.jpg") && c9.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA"); 
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }
 if (c3.style.backgroundImage.includes("sossa2.jpg") && c5.style.backgroundImage.includes("sossa2.jpg") && c7.style.backgroundImage.includes("sossa2.jpg")){
         console.log("VICTOIRE SOSSA");
         scoreSossa++;
-        scoreTonySpan.textContent = scoreTony;
+        scoreSossaSpan.textContent = scoreSossa;
         isFinish = true;
         return;
     }

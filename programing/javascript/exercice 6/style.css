@@ -92,3 +92,19 @@ button{
   }
   
 }
+
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+}
+
+.zik{
+    border: 6px solid red;
+    border-radius: 60px;
+}
+
+footer:hover{
+    opacity: 1;
+}
