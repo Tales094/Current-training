@@ -1,19 +1,44 @@
-1er projet : Le morpion (tic tac toe)
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TICTACTOC</title>
+    <link
+      rel="icon" type="image/x-icon" href=""/>
+</head>
+<body>
+    <Header> <h1>T<span class="color-letter">H</span>E <span class="color-letter">M</span>O<span class="color-letter">R</span>P<span class="color-letter">I</span>O<span class="color-letter">N</span> 
+        <span class="color-letter2">EDITION</span></h1>
+    <div class="button"><button id="gameButton">PLAY GAME
+    </button></div>
+    
+    </Header>
+    <Main>
+       <div id="grid">
+        <div id="c1" class="case case1"></div>
+        <div id="c2" class="case case2"></div>
+        <div id="c3" class="case case3"></div>
+        <div id="c4" class="case case4"></div>
+        <div id="c5" class="case case5"></div>
+        <div id="c6" class="case case6"></div>
+        <div id="c7" class="case case7"></div>
+        <div id="c8" class="case case8"></div>
+        <div id="c9" class="case case9"></div>
+       </div>
+       <div class="contenu">
+        <p>Current Player :<span id="currentPlayer"> 0 </span></p>
+        <p>Player 1 : <span id="scoreTony"> 0</span></p>
+        <p>Player 2 : <span id="scoreSossa"> 0</span></p>
+        <p>Draw :<span id="scoreDraw"> 0</span></p>
+       </div>
+    </Main>
 
-première étape : le brainstorming
+    
+    <Footer></Footer>
 
-Résultat  
-- Croix 
-- Rond 
-- Grille 
-- Système de tour par tour
-- Gérer la condition de victoire
-- Gérer le match nul
-- Compteur de points
-- Animation en cas de victoire (Ligne par exemple pour valider la victoire visuellement)
-- Bouton "Démarrer la partie"
-- Cliquer sur une case pour mettre une croix ou un rond
-
-Optionnel :
-- Choix des noms
-- Pizza à la place des ronds
+        <script src="js.js"> </script>
+</body>
+</html>

@@ -55,6 +55,7 @@ body{
     border-radius: 180px;
     background-color: black;
     position: relative;
+    animation: pulse-animation 0.5s infinite;
 }
 
 .oeil{
