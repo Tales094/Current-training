@@ -17,3 +17,77 @@ Résultat
 Optionnel :
 - Choix des noms
 - Pizza à la place des ronds
+
+
+
+bouton
+
+Merci pour le code complet, tu as déjà une bonne base pour ton Tic Tac Toe "Tony vs Sossa" ! Pour activer les clics sur les cases uniquement après avoir appuyé sur "PLAY GAME", tu dois utiliser ta variable isPlaying correctement. Là, elle est définie mais pas vérifiée dans les événements de clic.
+
+✅ Correction simple et claire
+Tu veux empêcher le joueur de jouer tant qu'il n'a pas appuyé sur le bouton de lancement. Voici comment faire :
+
+🛠️ Étape 1 : Dans tous tes addEventListener("click", ...) des cases (ex: c1, c2, ...), ajoute cette condition tout en haut :
+js
+Copier
+Modifier
+if (!isPlaying || isFinish) return;
+Par exemple pour c1 :
+
+js
+Copier
+Modifier
+c1.addEventListener(`click`, () => {
+    if (!isPlaying || isFinish) return; // ⬅️ Ajout ici
+    if (c1.style.backgroundImage !== "") return;
+    
+    // ... reste du code
+});
+Fais ça dans toutes tes cases de c1 à c9.
+
+🛠️ Étape 2 : Dans ton bouton de jeu (button.addEventListener), remplace cette partie :
+js
+Copier
+Modifier
+if (!isPlaying)
+    button.textContent = "LEST GO !!";
+
+if (button.textContent === "PLAY GAME") {
+    button.textContent = "RESTART";
+par :
+
+js
+Copier
+Modifier
+if (!isPlaying) {
+    button.textContent = "LEST GO !!";
+    timeout = setTimeout(() => {
+        isPlaying = true;
+        isFinish = false;
+        button.textContent = "RESTART";
+        changeCurrentPlayer();
+        timeout = null;
+    }, 1500);
+} else {
+    // reset grid
+    const cells = [c1, c2, c3, c4, c5, c6, c7, c8, c9];
+    cells.forEach(cell => {
+        cell.style.backgroundImage = "";
+    });
+
+    isFinish = false;
+    turnePlayer = 0;
+    changeCurrentPlayer();
+}
+✅ Résultat :
+Tant que tu n’as pas cliqué sur le bouton "PLAY GAME", tu ne peux pas cliquer sur les cases.
+
+Le bouton devient "RESTART" pour recommencer une nouvelle partie.
+
+isPlaying te sert à bloquer les clics au départ, isFinish sert à bloquer après une victoire ou match nul.
+
+Si tu veux, je peux te préparer un .zip avec cette version propre complète — ou t’expliquer comment ajouter l’animation de farine quand quelqu’un gagne. Tu préfères quoi ? 😄
+
+
+
+
