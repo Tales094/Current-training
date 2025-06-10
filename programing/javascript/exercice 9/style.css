@@ -1,0 +1,26 @@
+
+h2{
+    text-align: center;
+}
+
+.rectangle{
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 40px;
+    background-color: black;
+    cursor: pointer;
+    animation: pulse-cercle 0.2s infinite;
+    position: absolute;
+}
+
+@keyframes pulse-cercle {
+    0%{
+        filter: drop-shadow(1px 1px 4px #f30a0a25 );
+    }
+    100% {
+        filter: drop-shadow(1px 1px 4px #ff0000);
+    }
+    
+}
+body{background-color: rgb(128, 128, 128);}
