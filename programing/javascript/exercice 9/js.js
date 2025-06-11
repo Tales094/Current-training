@@ -56,12 +56,36 @@ console.log(resutl);
 
 let follow = document.querySelector('.rectangle')
 
-document.body.addEventListener("mousemove", (event) => {
-    follow.style.left = event.clientX + "px",
-    follow.style.top = event.clientY + "px"; 
+// 2. Indiquer sur quelle element evenement ce produit: 
+document.addEventListener("mousemove", (event) => {
+    follow.style.left = event.clientX - 20 + "px",    //Positionner l'element a GAUCHE //
+    follow.style.top = event.clientY - 20 + "px",     //Positionner l'element en HAUT //
+    follow.style.right = event.clientX + "px",        //Positionner l'element a DROITE //
+    follow.style.bottom = event.clientY + "px";       //Positionner l'element EN BAS //
    
+    //"- 20" signifie le calcul pour ajuster correctement le cercle o centre du cursor//
+    // calcul : décalé la position de moitié de sa largeur et de sa hauteur : //
+    // const offsetX = follow.offsetWidth / 2; 
+    // const offsetY = follow.offsetHeight / 2;
+    // follow.offsetWidth : donne la largeur du cercle (par exemple 40px).
+    // follow.offsetHeight : donne la hauteur du cercle (par exemple aussi 40px).
+    // En divisant par 2, tu obtiens le rayon (moitié de la taille), soit le décalage nécessaire pour que le centre du cercle tombe pile sur le curseur
+    // Comme le cercle et de 40px on divise par 2 : offsetX = 40 / 2 = 20;
 
-// console.log('la sourie se deplace');
+console.log(event.clientX,event.clientY);
 
 
+})
+
+// AJOUTER UNE EFFET DE TRANSPARENCE EN SURVOL SUR LES TXT : 
+
+let texts = document.querySelectorAll('#okk')
+
+texts.forEach(text => {
+    text.addEventListener("mouseenter", () => {
+        follow.style.backgroundColor = "transparent"
+    });
+    text.addEventListener("mouseleave", () => {
+        follow.style.backgroundColor = "rgba(0, 0, 0, 0.822)";
+    })
 })
