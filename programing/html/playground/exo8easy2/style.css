@@ -112,7 +112,7 @@ p{
   
   /* Animation au hover */
   .logo:hover::before {
-    animation: shine 0.6s ease-in-out;
+    animation: shine 0.2s ease-in-out;
   }
   
   @keyframes shine {
@@ -120,7 +120,7 @@ p{
       left: -75%;
     }
     100% {
-      left: 48%;
+      left: 60%;
     }
   }
   

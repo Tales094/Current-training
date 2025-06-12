@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+}
+
+/* center le h1 */
+.td{
+    display: flex;
+    justify-content: center;
+}
+
+.nichenne{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: white;
+}
+
+
+.nichenne::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+}
+
+.nichenne:hover::before{
+    animation: shine 0.6s ease-in-out;
+}
+
+@keyframes shine {
+    0% {
+      left: -75%;
+    }
+    100% {
+      left: 48%;
+    }
+  }
+
+
+
+
+
+
+ul{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;;
+    
+}
+li{
+    color: white;
+}
+li:hover{
+    color: red;
+}
+
+/* center le menu burguer */
+.lien{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+    flex-direction: column;
+}
+/* Creation des bar pr le menu B */
+.bar{
+    display: block;
+    
+    height: 2px;
+    background: red;
+    margin-top: 6px;
+    width: 30px;
+}
+
+.menu {
+  display: none; /* Caché par défaut */
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 80px; /* Ajuste selon la hauteur du bouton */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 20px;
+  border: 1px solid white;
+  z-index: 10;
+}
+/* Menu pour le JavaScript */
+.menu.active{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}

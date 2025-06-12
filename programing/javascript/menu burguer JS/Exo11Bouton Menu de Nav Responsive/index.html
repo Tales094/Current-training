@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Menu de navigation responsive (niveau medium)Exercice 3</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./icon/Rockstar-Games-GTA6.ico"
+    />
+  </head>
+  <body class="theme-sombre">
+    <header>
+      <div class="entete">
+        <a class="logo" href="">NaviPro</a>
+        <nav>
+          <!-- <input id="checkbox-mobile" type="checkbox" /> -->
+          <label for="checkbox-mobile" class="logo logo-mobile" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span
+          ></label>
+          <ul class="menu">
+            <li>
+              <a class="lien" href=""
+                ><i class="fa-solid fa-house"></i> Accueil</a
+              >
+            </li>
+            <li>
+              <a class="lien" href=""
+                ><i class="fa-solid fa-briefcase"></i> Service</a
+              >
+            </li>
+
+            <li class="lien content-link dropdown-bouton">
+              <!-- <input type="checkbox" id="toggle-produits" hidden />
+                <label for="toggle-produits" class="lien">-->
+              <button class="lien button-dropdown" href="">
+                <i class="fa-solid fa-cubes"></i> Produits
+                <i class="fa-solid fa-arrow-up"></i>
+              </button>
+              <!-- menu drop* -->
+
+              <ul class="dropdown-menu">
+                <li><a class="lien" href="">Produit 1</a></li>
+                <li><a class="lien" href="">Produit 2</a></li>
+                <li><a class="lien" href="">Produit 3</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="lien" href="">
+                <i class="fa-solid fa-circle-info"></i> À propos</a
+              >
+            </li>
+            <li>
+              <a class="lien" href=""
+                ><i class="fa-solid fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="title-container">
+        <h1>Menu de Navigation Responsive</h1>
+        <p>
+          Un exemple de menu responsive avec transition fluides et sous-menus
+          déroulants, réalisé entièrement en CSS.
+        </p>
+      </div>
+    </main>
+    <div class="flex-tuto">
+      <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+        distinctio illum, sint reiciendis ex doloremque expedita debitis earum
+        ipsum eos. Amet, omnis hic. Nesciunt, eum a impedit reprehenderit libero
+        repellendus.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+        consectetur eligendi, architecto reprehenderit vitae cum delectus
+        pariatur quis voluptas, placeat autem nostrum recusandae. Sequi
+        repellendus aspernatur minus vitae natus illum!
+      </div>
+      <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo rem
+        dolore, dolorem atque recusandae dolor impedit praesentium. Distinctio
+        illum, delectus, labore temporibus nam sint expedita modi ex quo autem
+        magni.
+      </div>
+    </div>
+    <footer></footer>
+   <script src="js.js"></script>
+  </body>
+</html>
