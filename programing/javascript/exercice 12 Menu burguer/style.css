@@ -7,15 +7,16 @@ body{
     display: flex;
     justify-content: center;
 }
-
+/* config h1 */
 .nichenne{
     position: relative;
     display: inline-block;
     overflow: hidden;
     color: white;
+    cursor: pointer;
 }
 
-
+/* Config effet brillant */
 .nichenne::before{
     content: "";
     position: absolute;
@@ -49,7 +50,7 @@ body{
 
 
 
-
+/* config ul */
 ul{
     margin-top: 60px;
     display: flex;
@@ -57,6 +58,7 @@ ul{
     gap: 60px;;
     
 }
+/* config li */
 li{
     color: white;
 }
@@ -82,7 +84,7 @@ li:hover{
     margin-top: 6px;
     width: 30px;
 }
-
+/* config menu */
 .menu {
   display: none; /* Caché par défaut */
   flex-direction: column;

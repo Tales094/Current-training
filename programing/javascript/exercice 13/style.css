@@ -1,0 +1,113 @@
+body{
+    /* background-color: rgba(0, 0, 0, 0.815); */
+    background-image: url(image/Pendu-Sinistre1.gif);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.score-img{
+    display: block;
+    /* margin: 0 auto; */
+    width: 150px;
+    height: auto;
+    margin-right: 10px auto;
+    margin-top: 20px auto;
+    
+}
+.pendu{
+    width: fit-content;
+    margin: 0 auto;
+}
+.img-container{
+    position: relative;
+    display: inline-block;
+}
+
+
+.tittle{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+P{
+    color: white;
+    letter-spacing: 3px;
+}
+.tittle-score{
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+
+}
+.contenu{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    flex-wrap: wrap;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 30px;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CLAVIER */
+footer {
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+    background-color: #1a191993; /* optionnel : couleur de fond */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.keyone, .keytwo, .keythree {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+button{
+     cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* effet d'ombre */
+    cursor: pointer ;
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+   
+}
+button:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* ombre plus prononcée au survol */
+    transform: translateY(2px); /* petit effet d'enfoncement' */
+    /* cursor: pointer; */
+}
