@@ -85,11 +85,12 @@ P{
 /* MOT A TROUVER */
 .words-to-find{
     text-shadow: 8px 8px 18px rgb(255, 0, 0);
-    font-size: 86px;
+    font-size: 50px;
     text-align: center;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bolder;
     /* max-width: 100%; */
 }
 .words{
@@ -128,6 +129,7 @@ button{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* effet d'ombre */
     cursor: pointer ;
     transition: box-shadow 0.2s ease, transform 0.1s ease;
+    
    
 }
 button:hover {
@@ -173,7 +175,7 @@ li:hover{
 }
 /* config menu */
 .help {
-  display: none; /* Caché par défaut */
+   display: none; /*Caché par défaut*/
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -192,11 +194,26 @@ li:hover{
   color: white;
   text-shadow: 2px 2px 3px black;
   list-style: none;
+
+  opacity: 0;
+  /* visibility: hidden; */
+  pointer-events: none;
+  /* transition: opacity 0.5s ease, visibility 0.5s ease */
+}
+.help.fade-out{
+    opacity: 1;
+    /* visibility: hidden;
+    pointer-events: none; */
+    
 }
 
 /* Menu pour le JavaScript */
 .help.active{
+    opacity: 1;
     display: flex;
     justify-content: center;
     position: absolute;
+    pointer-events: auto;
+    
 }
+

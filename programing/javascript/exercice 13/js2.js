@@ -28,3 +28,10 @@ flashErreur();
 
  jouerSonPerdu();
 // Affiche un message de fin par exemple                   
+
+
+/* Style bouton désactivé */
+button.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

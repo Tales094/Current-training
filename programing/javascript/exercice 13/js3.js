@@ -1,12 +1,12 @@
 // Liste de mots sombres/sinistres pour le pendu
 const motsSinistres = [
-  "abîme", "angoisse", "asile", "autopsie", "balafre", "cadavre", "caveau", "cercueil", "charogne",
-  "cimetiere", "corbeau", "damnation", "décomposition", "démence", "désespoir", "diabolique",
-  "enfer", "enterrement", "fantôme", "funeste", "goule", "hurlement", "lugubre", "malédiction",
-  "marécage", "morbide", "nécrose", "obsèques", "ombre", "pendaison", "pénitence", "possession",
-  "putréfaction", "revenant", "sacrifice", "sanglant", "sarcophage", "sépulture", "spectre",
-  "supplice", "ténèbres", "tombeau", "tourment", "trépas", "vampire", "vengeance", "vermine",
-  "viscères", "voix", "zombie"
+  "abime", "angoisse", "asile", "autopsie", "balafre", "cadavre", "caveau", "cercueil", "charogne",
+  "cimetiere", "corbeau", "damnation", "decomposition", "demence", "désespoir", "diabolique",
+  "enfer", "enterrement", "fantome", "funeste", "goule", "hurlement", "lugubre", "malediction",
+  "marecage", "morbide", "necrose", "obseques", "ombre", "pendaison", "penitence", "possession",
+  "putrefaction", "revenant", "sacrifice", "sanglant", "sarcophage", "sepulture", "spectre",
+  "supplice", "tenebres", "tombeau", "tourment", "trepas", "vampire", "vengeance", "vermine",
+  "visceres", "voix", "zombie"
 ];
 
 // Variables globales de jeu
@@ -20,7 +20,7 @@ let score2 = 0;                   // Score joueur 2
 let joueurActuel = 1;             // Joueur courant (1 ou 2)
 
 // Éléments HTML que l'on manipule
-const motElem = document.getElementById("mot-a-deviner");
+const motElem = document.getElementById("words-to-find");
 const score1Elem = document.getElementById("score1");
 const score2Elem = document.getElementById("score2");
 const hangmanImg = document.querySelector(".hangman");
