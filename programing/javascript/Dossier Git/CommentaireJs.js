@@ -53,7 +53,8 @@ document.querySelectorAll("footer button").forEach(button => {
 // Active ou désactive tous les boutons du clavier virtuel
 /****
  * 
- * 
+ * @returns {}
+ * @param {} text
  * 
  * 
  ****/
