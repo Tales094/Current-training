@@ -26,3 +26,38 @@ let obj = {
 console.log(obj);
 console.log(obj);
 
+/****
+ * @returns {string}
+ * @param {string} text 
+ * c'est ma fonction bonjr{)
+ * 
+ * 
+ * ok*/ 
+function bjr(text) {
+    console.log("bonjour");   
+    
+}
+
+bjr()
+
+/***
+ * @returns {string}
+ * @param {string} text
+ * 
+ * okok
+ */
+function stringAge(text) {
+    console.log("execute le code");
+    return text
+    
+}
+/**
+ * 
+ * @param {*} text
+ * @returns {boolean}
+ * bjr sava
+ */
+stringAge("bjour")
+const text = stringAge("bjour")
+console.log(text);
+

@@ -1,0 +1,219 @@
+/* IMAGE DE FOND */
+body{
+    /* background-color: rgba(0, 0, 0, 0.815); */
+    background-image: url(image/Pendu-Sinistre1.gif);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    position: relative;
+}
+#menu-help{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    
+    
+    
+}
+
+/* REGLAGE DU MOT SCORE */
+.score-img{
+    display: block;
+    /* margin: 0 auto; */
+    width: 150px;
+    height: auto;
+    margin-right: 10px auto;
+    margin-top: 20px auto;
+}
+/* REGLAGE IMAGE CORDE ET SCORE (POSITION) */
+.pendu{
+    width: fit-content;
+    margin: 0 auto;
+}
+.img-container{
+    position: relative;
+    display: inline-block;
+}
+.tittle-score{
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+
+}
+/* REGLAGE TITTLE */
+.tittle{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* REGLAGE PARAGRAPHE */
+P{
+    color: white;
+    letter-spacing: 3px;
+}
+/* REGLAGE CONTENU */
+.contenu{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    flex-wrap: wrap;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 30px;  
+}
+
+.image-pendu{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+.hangman{
+   width: 250px;
+   max-width: 100%;
+   height: auto;
+}
+/* MOT A TROUVER */
+.words-to-find{
+    text-shadow: 8px 8px 18px rgb(255, 0, 0);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    /* max-width: 100%; */
+}
+.words{
+     letter-spacing: 60px;
+}
+
+
+/* CLAVIER */
+footer {
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+    background-color: #1a191993; /* optionnel : couleur de fond */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  
+}
+
+.keyone, .keytwo, .keythree {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+button{
+     cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* effet d'ombre */
+    cursor: pointer ;
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+    
+   
+}
+button:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* ombre plus prononcée au survol */
+    transform: translateY(2px); /* petit effet d'enfoncement' */
+    /* cursor: pointer; */
+}
+
+
+
+/* Creation des bar pr le menu B */
+.lien{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+    flex-direction: column;
+}
+.hp{
+    text-shadow: 1px 1px 3px black;
+    font-weight: bolder;
+    font-size: medium;
+}
+/* config li */
+li{
+    color: white;
+    opacity: 0;
+}
+li:hover{
+    color: red;
+    opacity: 3;
+    font-weight: bolder;
+}
+/* Creation des bar pr le menu B */
+.bar{
+    display: block;
+    height: 2px;
+    background: red;
+    margin-top: 6px;
+    width: 60px;
+    box-shadow: 1px 1px 3px black;;
+}
+/* config menu */
+.help {
+   display: none; /*Caché par défaut*/
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -105px; /* Ajuste selon la hauteur du bouton */
+  right: -10px;
+  transform: translateX(-50%); 
+  /* background-color: rgba(0, 0, 0, 0.301); */
+  background-image: url(image/rip1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+  border: 1px solid rgb(235, 235, 235);
+  border: none;
+  z-index: 10;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  list-style: none;
+
+  opacity: 0;
+  /* visibility: hidden; */
+  pointer-events: none;
+  /* transition: opacity 0.5s ease, visibility 0.5s ease */
+}
+.help.fade-out{
+    opacity: 1;
+    /* visibility: hidden;
+    pointer-events: none; */
+    
+}
+
+/* Menu pour le JavaScript */
+.help.active{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    pointer-events: auto;
+    
+}
+
