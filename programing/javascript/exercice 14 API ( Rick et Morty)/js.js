@@ -35,6 +35,16 @@ function fetchAllCharacters() {
 // Appel fonction
 fetchAllCharacters();
 
+document.getElementById("close").addEventListener("click", () => {
+  document.getElementById("modal").classList.add("hidden");
+});
+
+// Fermer la modale en cliquant à l’extérieur de l'image
+document.getElementById("modal").addEventListener("click", (e) => {
+  if (e.target.id === "modal") {
+    document.getElementById("modal").classList.add("hidden");
+  }
+});
 
     /****
      *** System **
