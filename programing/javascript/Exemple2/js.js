@@ -25,3 +25,27 @@ words.forEach((word) => {
 .catch((error) => {
     console.error("Erreur lors de la récupréation :", error);   
 });
+
+
+const body = document.querySelector("body")
+fetch("https://rickandmortyapi.com/api/character")
+.then(() =>response.json())
+.then(data =>
+    data.results.forEach(element => {
+    console.log(element);
+    const createDiv = document.createElement('div')
+    body.appendChild(createDiv)
+
+    const createPara = document.createElement("p")
+    createPara.textContent = element.name
+    createDiv.appendChild(createPara)
+
+    const createImg = document.createElement('img')
+    createImg.src =element.image
+    createDiv.appendChild(createImg)
+});
+    
+
+    const createDiv = document.createElement('div')
+    Body.appendChild(createDiv)
+    

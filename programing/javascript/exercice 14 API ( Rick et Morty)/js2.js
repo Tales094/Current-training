@@ -6,6 +6,8 @@ async function fetchAllCharacters() {
     const firstResponse = await fetch("https://rickandmortyapi.com/api/character");
     const firstData = await firstResponse.json();
     const totalPages = firstData.info.pages;
+    
+    
 
     // Boucle sur toutes les pages
     for (let page = 1; page <= totalPages; page++) {
