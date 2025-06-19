@@ -36,6 +36,11 @@ document.querySelector(".words").textContent = motMasque.split("").join(" ");
 
 let lettresDevines = Array(motADeviner.length).fill("_")
 
+
+/****
+ * @returns {void}
+ * Met à jour l'affichage du mot avec les lettres devinées jusqu'à présent.
+ ****/
 const afficherMot = () => {
     document.getElementById("words-to-find").textContent = lettresDevines.join(" ");
 };
@@ -50,20 +55,13 @@ document.querySelectorAll("footer button").forEach(button => {
     verifierLettre(lettre);
   });
 });
-// Active ou désactive tous les boutons du clavier virtuel
 /****
- * 
- * @returns {}
- * @param {} text
- * 
- * 
+ * @returns {void}
+ * @param {boolean} actif
+ * Active ou désactive tous les boutons du clavier virtuel.
+ * Si `actif` est `true`, les boutons sont activés, sinon ils sont désactivés.
+ * Change aussi leur style en ajoutant ou retirant la classe "disabled".
  ****/
-
-
-
-
-
-
 
 function activerClavier(actif) {
   document.querySelectorAll("footer button").forEach(btn => {
@@ -93,6 +91,13 @@ document.addEventListener("keydown", (event) => {
 let erreurs = 0;
 const maxErreurs = 6;
 
+/****
+ * @returns {void}
+ * @param {string} lettre
+ * Vérifie si la lettre cliquée ou tapée est présente dans le mot à deviner.
+ * Met à jour le mot affiché et le score d'erreurs.
+ * Termine la partie si le mot est trouvé ou si le nombre d'erreurs atteint le maximum.
+ ****/
 function verifierLettre(lettre){
     //ingore si la lettre deja trouvé(ou tester)
     if(lettresDevines.includes(lettre))
@@ -126,6 +131,14 @@ function verifierLettre(lettre){
 }
 
 // fin de parti (victoire-defaite)
+
+
+/****
+ * @returns {void}
+ * @param {boolean} gagne
+ * Affiche un message de victoire ou défaite selon le paramètre `gagne`.
+ * Met à jour les scores et lance automatiquement une nouvelle partie après un court délai.
+ ****/
 function finDePartie(gagne) {
     activerClavier(false);
     if(gagne) {
@@ -161,12 +174,25 @@ const score2Elem = document.getElementById("score2");
 let score1 = 0;
 let score2 = 0;
 let joueurActuel = 1;
+
 // Alterne entre joueur 1 et joueur 2
+
+/****
+ * @returns {void}
+ * Change le joueur actif (alterne entre joueur 1 et 2).
+ ****/
 function joueurSuivant() {
   joueurActuel = (joueurActuel === 1) ? 2 : 1;
 }
 
 // relancer la party pour le joueur suivant
+
+/****
+ * @returns {void}
+ * Initialise une nouvelle manche : remet à zéro les erreurs,
+ * choisit un nouveau mot, réactive les boutons du clavier,
+ * remet l’image du pendu à zéro.
+ ****/
 function nouvellePartie() {
     erreurs = 0;
     motADeviner = motMacabre[Math.floor(Math.random() * motMacabre.length)]
@@ -188,6 +214,12 @@ function nouvellePartie() {
     
 }
  //Réinitilise le jeu
+
+ /****
+ * @returns {void}
+ * Remet les scores des deux joueurs à zéro, réinitialise le joueur actuel,
+ * met à jour l'affichage et démarre une nouvelle partie.
+ ****/
  function resetGame(params) {
     //SCORE :
     score1 = 0;

@@ -61,3 +61,16 @@ stringAge("bjour")
 const text = stringAge("bjour")
 console.log(text);
 
+/////////////////////////////////////
+// gerrer API
+fetch("https://trouve-mot.fr/api/random/10")
+.then((response) =>response.json())
+.then((words) => console.log(words))
+
+fetch("https://trouve-mot.fr/api/startwith/8/2")
+.then((response) =>response.json())
+.then((words) => console.log(words))
+
+fetch("https://trouve-mot.fr/api/startwith/7/1")
+.then((response) =>response.json())
+.then((words) => console.log(words))
