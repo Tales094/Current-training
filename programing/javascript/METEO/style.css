@@ -1,0 +1,94 @@
+#map {
+  width: 1600px;
+  height: 180px;
+  border: 6px solid black;
+  left: 30px;
+  right: 30px;
+  
+} 
+/* #sourceMappingURL=index.css.map */
+body{
+  /* background-color: brown; */
+  background-color: #2196f3;
+ 
+}
+
+h1{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 60px;
+  color: white;  
+ 
+  /* background-color: #2196f3;
+  display: inline-block;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 10px; */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
+  
+}
+p{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -20px;
+  font-size: smaller;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+}
+.img{
+  position: relative;
+  
+}
+
+.tittle{
+position: absolute;
+top: 0;
+margin-top: 100px;
+text-align: center;
+width: 100%;
+overflow: hidden;
+
+}
+
+.info-position{
+  border-top: 30px;
+  border: 5px solid black;
+  border-color: red;
+  padding: 10px;
+  border-radius: 40px;
+  height: 200px;
+  width:200px;
+  background-color: rgba(221, 221, 221, 0.562);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  
+}
+main{
+  position: relative;
+}
+.container-position{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 170px;
+  right: 30px;
+}
+
+img{
+width: 3000px;
+
+}
+
+.bar {
+  width: 15px;               /* largeur fine pour une barre verticale */
+  height: 150px;            /* hauteur de la barre */
+  background-color: rgb(119, 119, 119);  /* couleur de la barre */
+  position: absolute;
+  bottom: 25px;
+  right: 120px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);;
+}

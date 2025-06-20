@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METEO A LA CARTE (WEATHER)</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="icon" type="image/x-icon" href="icon/Meteo.jpg" />
+  </head>
+  <body>
+    <header>
+      <img class="img" src="image/soleil.nuage.jpg" alt="soleil">
+      <div class="tittle">
+      
+      <h1>CARTE METEO</h1>
+      <P>METEO EN UN SEUL CLIQUE</P>
+      </div>
+    </header>
+    <main>
+      
+      <div id="map" style="height: 400px"></div>
+      <img src="image/plage.png" alt="plage">
+      <div class="bar"></div>
+      <div class="container-position">
+      <div class="info-position"></div></div>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./js.js"></script>
+  </body>
+</html>
