@@ -4,14 +4,16 @@
   max-width: 1600px;
   min-height: 250px;
   border: 6px solid black;
-  left: 30px;
-  right: 30px;
-  margin: 0;
+  /* margin: 0 auto; */
+  /* left: 150px; */
+ 
+  box-sizing: border-box;
+  
 } 
 /* #sourceMappingURL=index.css.map */
 body{
   /* background-color: brown; */
-  background-color: #2196f3;
+  background-color: #3591dd;
  
 }
 
@@ -32,9 +34,10 @@ h1{
 .meteo{
   text-align: center;
   margin-bottom: 30px;
-  margin-top: -20px;
-  font-size: smaller;
+  margin-top: -18px;
+  font-size: 17px;
   color: rgb(233, 229, 229);
+ 
   font-weight: bolder;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
   text-decoration: underline;
@@ -63,6 +66,7 @@ p{
 }
 .img{
   position: relative;
+  height: 350px;
   
 }
 
@@ -103,7 +107,7 @@ main{
 img{
 width: 10%;
 min-width: 100%;
-height: auto;
+height: 215px;
 display: block;
 margin: 0;
 

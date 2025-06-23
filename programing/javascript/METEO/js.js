@@ -90,18 +90,18 @@ let currentMarker = null;
                
                     console.log(data);
                })
-               .catch(() => {
-                    const meteoInfo = document.createElement('p');
-                    meteoInfo.textContent = "Impossible de récupérer la météo.";
-                    infoPosition.appendChild(meteoInfo);
-               });
+              //  .catch(() => {
+              //       const meteoInfo = document.createElement('p');
+              //       meteoInfo.textContent = "Impossible de récupérer la météo.";
+              //       infoPosition.appendChild(meteoInfo);
+              //  });
 
         })
-        .catch(() => {
-            const errorInfo = document.createElement('p');
-            errorInfo.textContent = "Impossible de récupérer les informations de localisation.";
-            infoPosition.appendChild(errorInfo);
-        });
+//         .catch(() => {
+//             const errorInfo = document.createElement('p');
+//             errorInfo.textContent = "Impossible de récupérer les informations de localisation.";
+//             infoPosition.appendChild(errorInfo);
+//         });
 });
 
 
@@ -163,4 +163,4 @@ map.on('contextmenu', function(e) { // clic droit pour l'itinéraire
     
     
 // }) .addTo(map);
-console.log(L.Routing);
+// console.log(L.Routing);
