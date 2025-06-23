@@ -1,10 +1,12 @@
 #map {
-  width: 1600px;
-  height: 180px;
+  width: 100%;
+  height: 50vh;
+  max-width: 1600px;
+  min-height: 250px;
   border: 6px solid black;
   left: 30px;
   right: 30px;
-  
+  margin: 0;
 } 
 /* #sourceMappingURL=index.css.map */
 body{
@@ -27,16 +29,36 @@ h1{
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
   
 }
-p{
+.meteo{
   text-align: center;
   margin-bottom: 30px;
   margin-top: -20px;
   font-size: smaller;
-  color: white;
+  color: rgb(233, 229, 229);
   font-weight: bolder;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
   text-decoration: underline;
   text-underline-offset: 3px;
+  text-decoration: none;
+}
+p{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -5px;
+  font-size: smaller;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: larger;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1px;
+
 
 }
 .img{
@@ -55,16 +77,16 @@ overflow: hidden;
 }
 
 .info-position{
-  border-top: 30px;
+  border-top: 40px;
   border: 5px solid black;
   border-color: red;
-  padding: 10px;
+  padding: 2px;
   border-radius: 40px;
   height: 200px;
   width:200px;
   background-color: rgba(221, 221, 221, 0.562);
   box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  
+  font-size: smaller;
 }
 main{
   position: relative;
@@ -79,7 +101,11 @@ main{
 }
 
 img{
-width: 3000px;
+width: 10%;
+min-width: 100%;
+height: auto;
+display: block;
+margin: 0;
 
 }
 
@@ -92,3 +118,4 @@ width: 3000px;
   right: 120px;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.5);;
 }
+
