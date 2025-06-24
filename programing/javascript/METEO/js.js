@@ -40,9 +40,9 @@ let currentMarker = null;
 
         // Positionne la div à la position du curseur
     // e.originalEvent contient les coordonnées du clic souris
-    infoPosition.style.left = `${e.originalEvent.clientX + 10}px`;
-    infoPosition.style.top = `${e.originalEvent.clientY + 10}px`;
-    infoPosition.style.display = "block";
+    // infoPosition.style.left = `${e.originalEvent.clientX + 10}px`;
+    // infoPosition.style.top = `${e.originalEvent.clientY + 10}px`;
+    // infoPosition.style.display = "block";
 
        
         fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`)
@@ -155,12 +155,12 @@ map.on('contextmenu', function(e) { // clic droit pour l'itinéraire
   
 })
 // .addTo(map);
-//   L.Routing.control({
-//     waypoints: [
-//         L.latLng(36.7198,-4.42),
-//         L.latLng(48.86, 2.36)
-//     ]
+  L.Routing.control({
+    waypoints: [
+        L.latLng(36.7198,-4.42),
+        L.latLng(48.86, 2.36)
+    ]
     
     
-// }) .addTo(map);
-// console.log(L.Routing);
+}) .addTo(map);
+console.log(L.Routing);

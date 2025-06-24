@@ -1,0 +1,103 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* width:50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: 1px solid black; */
+    background-color: rgb(2, 2, 161);
+    background-image: url(image/GTA-6-Banniere.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+main{
+    /* background-image: url(image/GTA-6-Banniere.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+        width:20%;
+        
+    margin-top: 400px;
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: 1px solid black;
+    
+}
+h1{
+    text-align: center;
+}
+input:invalid {
+    border: 1px solid rgb(250, 131, 131);
+}
+input:valid{
+    border: 1px solid rgb(0, 153, 8);
+
+}
+
+.form{
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+label{
+    display: block;
+}
+.radio-label {
+    display: inline;
+    margin-right: 10px;
+}
+.endessousdutitre{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+}
+.con{
+    color: rgb(0, 127, 201);
+    cursor: pointer;
+}
+.bl{
+    color: white;
+    background-color: rgb(1, 120, 189);
+    padding: 4px;
+    margin-top: 20px;
+    width: 200px;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    /* border: 1px solid grey; */
+    margin-left: 60px;
+    border-width: 1px;
+    margin-right: -30px;
+}
+.bl:hover {
+    opacity: 0.90;
+   
+}
+
+.bl:focus {
+    background-color: rgba(3, 73, 114, 0.945);
+}
+
+.bl:active {
+    background-color: rgba(1, 120, 189, 0.99);
+}
+.rese{
+    padding: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 60px;
+    margin-right: -30px;
+
+
+}
+fieldset{
+    border: 1px solid rgb(255, 255, 255);
+}
+p{
+    font-size: 10.5px;
+    color: gray;
+}
