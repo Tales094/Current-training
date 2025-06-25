@@ -11,7 +11,7 @@
     <header></header>
     <main>
     <h1>Créer un compte</h1>
-    <form action="/submit-form" method="post">
+    <form id="contact-form" action="/submit-form" method="post">
       <div class="form">
         <label for="full-name">Prénom</label>
         <input
@@ -43,11 +43,11 @@
         />
       </div>
       <div class="form">
-        <label for="Motdepasse">Mot de passe</label>
+        <label for="motdepasse">Mot de passe</label>
         <input
           class="endessousdutitre"
           type="password"
-          id="Motdepasse"
+          id="motdepasse"
           name="Motdepasse"
           required
         />
@@ -58,12 +58,12 @@
       </div>
 
       <div class="form">
-        <label for="ConfirmMDP">Confirme le mot de passe</label>
+        <label for="confirmMDP">Confirme le mot de passe</label>
         <input
           class="endessousdutitre"
           type="password"
-          id="ConfirmMDP"
-          name="ConfirmMDP"
+          id="confirmMDP"
+          name="confirmMDP"
           required
         />
       </div>
@@ -92,11 +92,11 @@
         <label for="pays">Pays</label>
         <select class="endessousdutitre" id="pays" name="pays">
           <option value="">Selectionnez votre pays</option>
-          <option value="">Angleterre</option>
-          <option value="">Allemagne</option>
-          <option value="">Espagne</option>
-          <option value="">france</option>
-          <option value="">Autre</option>
+          <option value="Angleterre">Angleterre</option>
+          <option value="Allemagne">Allemagne</option>
+          <option value="Espagne">Espagne</option>
+          <option value="france">france</option>
+          <option value="Autre">Autre</option>
         </select>
       </div>
       <div class="form">
@@ -107,14 +107,15 @@
       </div>
       <div class="form">
         <label for="newsletter"></label>
-        <input id="news" type="checkbox" name="news" checked disabled />
+        <!-- <input id="news" type="checkbox" name="news" checked disabled /> -->
+        <input id="news" type="checkbox" name="news" checked readonly />
         Je souhaite recevoir la newsletter
       </div>
 
       <div class="form">
         <input class="rese" type="reset" value="Réinitialiser" />
-        <input class="bl" type="button" value="S'inscrire" />
-        <input class="bl" type="button" value="S'inscrire ici" />
+        <input class="bl" type="submit" value="S'inscrire" />
+        <input class="bl" type="submit" value="S'inscrire ici" />
       </div>
     </form>
     </main>

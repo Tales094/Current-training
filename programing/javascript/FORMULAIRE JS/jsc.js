@@ -4,9 +4,24 @@ form.addEventListener('submit', function(event) {
   event.preventDefault(); // Empêche le rechargement de la page
 
   const nameInput = document.getElementById('full-name').value;
-  const age = document.getElementById("age").value;
-  const date = document.getElementById("date").value;
-  const dateN = document.getElementById("datedenaissance").value;
+  const nameUse = document.getElementById("username").value;
+  const mail = document.getElementById("email").value;
+  const motDePass = document.getElementById("motdepasse").value;
+  const verifMotDePas = document.getElementById("confirmMDP").value;
+  // const genre = document.getElementById('genre').value;
+  const gender = document.querySelector('input[name="gender"]:checked')?.value;
+  const pays = document.getElementById('pays').value;
+  const conditions = document.getElementById('conditions').checked;
+  const newsletter = document.getElementById('news').checked;
+  const age = document.getElementById('age').value;
+  const date = document.getElementById('date').value;
+  const dateN = document.getElementById('datedenaissance').value;
+
+  if (pays !== "") {
+  console.log("Pays sélectionné :", pays); // ex : "france"
+} else {
+  console.log("Aucun pays sélectionné");
+}
 
    fetch('https://685a97729f6ef96111570842.mockapi.io/data', {
     method: 'POST',
@@ -15,9 +30,17 @@ form.addEventListener('submit', function(event) {
     },
     body: JSON.stringify({
       name: nameInput,
-      age : age,
-      date : dateN ,
-      jourDeNaissance : date,
+      nameUser : nameUse,
+      email : mail,
+      passwords : motDePass,
+      validPass : verifMotDePas,
+      genre : gender,
+      pays : pays,
+      conditions : conditions,
+      newsletter : newsletter,
+      // age : age,
+      // date : dateN ,
+      // jourDeNaissance : date,
 
     })
   })
