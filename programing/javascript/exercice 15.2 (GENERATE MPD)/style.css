@@ -31,9 +31,10 @@
 }
 .mdp{
     color: rgba(255, 253, 253, 0.753);
+    font-size: 3px;
     font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
-   
+    margin-left: -10px;
 }
 body {
   display: flex;
@@ -63,7 +64,7 @@ body {
 #password-output {
   background: transparent;
   border: none;
-  font-size: 1.5rem;
+  font-size: 16.4px;
   width: 100%;
 }
 .range-container {
