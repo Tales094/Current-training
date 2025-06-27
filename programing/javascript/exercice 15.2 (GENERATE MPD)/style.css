@@ -4,7 +4,13 @@
   font-size: 1.2rem;
   outline: none;
 }
-p{
+.foot{
+  margin-top: 10px;
+ z-index: 3000;
+ color: white;
+ font-weight: bolder;
+}
+.welcome{
   color: white;
   font-weight: bolder;
   text-shadow: #f82d2d;

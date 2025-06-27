@@ -23,18 +23,20 @@ body {
 .telephone {
   width: 280px;
   height: 550px;
-  background-color: #000000f6;
+  background-color: #fffffff6;
   border-radius: 40px;
-  box-shadow: 0 0 20px rgba(110, 110, 110, 0.945);
+  box-shadow: 0 0 20px rgb(214, 214, 214);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  border: 4px solid rgb(0, 0, 0);
 }
 
 .ecran {
   width: 90%;
   height: 85%;
+  border: 3px solid black;
   background-color: #e6e4e4;
   border-radius: 20px;
   overflow-y: auto;
@@ -42,15 +44,24 @@ body {
   box-shadow: inset 0 0 5px rgba(160, 159, 159, 0.2);
     background: linear-gradient(
 
-    rgba(255, 255, 255, 0.65) 10%,
-    rgba(0, 0, 0, 0.95) 100%
+    rgba(255, 255, 255, 0.65) -5%,
+    rgba(0, 0, 0, 0.95) 90%
   );
+  
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
 }
+
+.ecran::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
 
 .bouton {
   width: 40px;
   height: 40px;
-  background-color: #ccc;
+  background-color: #0a0a0a;
   border-radius: 50%;
   margin-top: 12px;
   box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
