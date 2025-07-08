@@ -6,7 +6,16 @@
   outline: none;
   box-sizing: border-box;
 }
-
+.mdp{
+    color: rgba(255, 253, 253, 0.753);
+    font-size: 3px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* effet de texte en relief */
+    margin-left: -10px;
+    color: rgba(0, 0, 0, 0.753);
+   
+    
+}
 body {
   display: flex;
   justify-content: center;
@@ -88,6 +97,7 @@ body {
   background: transparent;
   border: none;
   /* font-size: 1.2rem; */
+    font-size: 16.4px;
   width: 100%;
 }
 
