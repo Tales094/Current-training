@@ -7,7 +7,7 @@ $password = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODEEXCEPTION);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connexion réussie à la base de données.<br><br>";
 } catch (PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
@@ -22,7 +22,7 @@ $sqlType = "SELECT * FROM type_vehicule`";
 $stmtType = $pdo->prepare($sqlType);
 $stmtType->execute();
 
-$resultsType = $stmtType->fetchAll(PDO::FETCHASSOC);
+$resultsType = $stmtType->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
